@@ -1,0 +1,714 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>ビジネス・オブジェクト Location の作成 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="create_bo_department.html" />
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    はじめての Web アプリケーション開発
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../part1/">
+            
+                <a href="../part1/">
+            
+                    
+                    パート1: Web アプリケーションの作成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../part1/create_visual_app.html">
+            
+                <a href="../part1/create_visual_app.html">
+            
+                    
+                    ビジュアル・アプリケーションの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../part1/create_web_app.html">
+            
+                <a href="../part1/create_web_app.html">
+            
+                    
+                    Webアプリケーションの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    パート2: ビジネス・オブジェクトの作成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="create_bo_location.html">
+            
+                <a href="create_bo_location.html">
+            
+                    
+                    ビジネス・オブジェクト Location の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="create_bo_department.html">
+            
+                <a href="create_bo_department.html">
+            
+                    
+                    ビジネス・オブジェクト Department の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="create_bo_employee.html">
+            
+                <a href="create_bo_employee.html">
+            
+                    
+                    ビジネス・オブジェクト Employee の作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../part3/">
+            
+                <a href="../part3/">
+            
+                    
+                    パート3: ビジネス・オブジェクトを参照・作成するページの作成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../part3/add_departments_table.html">
+            
+                <a href="../part3/add_departments_table.html">
+            
+                    
+                    Department のレコードの一覧を表示するテーブルの追加
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../part3/create_department.html">
+            
+                <a href="../part3/create_department.html">
+            
+                    
+                    Department のレコードを作成するページの追加
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../part3/add_employees_table.html">
+            
+                <a href="../part3/add_employees_table.html">
+            
+                    
+                    Employee のレコードの一覧を表示するページの追加
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../part3/create_employee.html">
+            
+                <a href="../part3/create_employee.html">
+            
+                    
+                    Employee のレコードを作成するページの追加
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../part3/change_page_name.html">
+            
+                <a href="../part3/change_page_name.html">
+            
+                    
+                    ページの名前の変更
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../part4/">
+            
+                <a href="../part4/">
+            
+                    
+                    パート4: ページ間のナビゲーションの設定
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../part4/departments_to_employees.html">
+            
+                <a href="../part4/departments_to_employees.html">
+            
+                    
+                    Departments ページから Employees ページへのナビゲーション
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../part4/employees_to_departments.html">
+            
+                <a href="../part4/employees_to_departments.html">
+            
+                    
+                    Employees ページから Departments ページへのナビゲーション
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../part5/">
+            
+                <a href="../part5/">
+            
+                    
+                    パート5: Department のレコードの編集、詳細ページの作成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../part5/import_department_data.html">
+            
+                <a href="../part5/import_department_data.html">
+            
+                    
+                    データのインポート
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../part5/edit_department.html">
+            
+                <a href="../part5/edit_department.html">
+            
+                    
+                    レコードを編集するページの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../part5/detail_department.html">
+            
+                <a href="../part5/detail_department.html">
+            
+                    
+                    レコードの詳細を表示するページの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../part6/">
+            
+                <a href="../part6/">
+            
+                    
+                    パート6: Employee のレコードの編集、詳細ページの作成
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../part6/import_employee_data.html">
+            
+                <a href="../part6/import_employee_data.html">
+            
+                    
+                    データのインポート
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../part6/edit_employee.html">
+            
+                <a href="../part6/edit_employee.html">
+            
+                    
+                    レコードを編集するページの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../part6/detail_employee.html">
+            
+                <a href="../part6/detail_employee.html">
+            
+                    
+                    レコードの詳細を表示するページの作成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../../delete_employee.md">
+            
+                <span>
+            
+                    
+                    レコードを削除するボタンの追加
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >ビジネス・オブジェクト Location の作成</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <p><a href="../../">Oracle VBCS: &#x306F;&#x3058;&#x3081;&#x3066;&#x306E; Web &#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x958B;&#x767A;</a> &gt;
+<a href="./">&#x30D1;&#x30FC;&#x30C8;2: &#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x4F5C;&#x6210;</a></p>
+<h2 id="&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;-location-&#x306E;&#x4F5C;&#x6210;">&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8; Location &#x306E;&#x4F5C;&#x6210;</h2>
+<p>&#x3053;&#x3053;&#x3067;&#x306F;&#x3001;&#x30AA;&#x30D5;&#x30A3;&#x30B9;&#x306E;&#x6240;&#x5728;&#x5730;&#x3092;&#x8868;&#x3059;&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8; Location &#x3092;&#x4F5C;&#x6210;&#x3057;&#x307E;&#x3059;&#x3002;
+&#x6B21;&#x306B;&#x3001;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306B;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x3092;&#x8FFD;&#x52A0;&#x3057;&#x307E;&#x3059;&#x3002;
+&#x6700;&#x5F8C;&#x306B;&#x3001;CSV &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x304B;&#x3089;&#x30C7;&#x30FC;&#x30BF;&#x3092;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h3 id="&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x4F5C;&#x6210;">&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x4F5C;&#x6210;</h3>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-1&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 1&#x3011;</h5>
+<p>&#x30A2;&#x30FC;&#x30C6;&#x30A3;&#x30D5;&#x30A1;&#x30AF;&#x30C8;&#x30FB;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x306E; <strong>&#x300C;Business Objects&#x300D;</strong> &#x30BF;&#x30D6;
+<img src="../icons/vbcsca_bo_icon.png">
+&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-2&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 2&#x3011;</h5>
+<p>&#x30A2;&#x30FC;&#x30C6;&#x30A3;&#x30D5;&#x30A1;&#x30AF;&#x30C8;&#x30FB;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x306B;&#x3042;&#x308B; <strong>&#x300C;+ Business Object&#x300D;</strong> &#x30DC;&#x30BF;&#x30F3;&#x3001;&#x307E;&#x305F;&#x306F;&#x53F3;&#x4E0A;&#x90E8;&#x306B;&#x3042;&#x308B; <strong>&#x300C;&#xFF0B;&#x300D;</strong>&#xFF08;Create Business Object&#xFF09; &#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-3&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 3&#x3011;</h5>
+<p><strong>&#x300C;New Business Object&#x300D;</strong> &#x30DD;&#x30C3;&#x30D7;&#x30A2;&#x30C3;&#x30D7;&#x30FB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x305F;&#x3089;&#x3001; <a href="#tab2-1-1">&#x8868; 2-1-1</a> &#x306E;&#x3088;&#x3046;&#x306B;&#x8A2D;&#x5B9A;&#x3057;&#x3066;&#x3001;
+<img src="../icons/vbcsca_create_icon.png" alt="Create &#x30A2;&#x30A4;&#x30B3;&#x30F3;">
+&#xFF08;Create&#xFF09;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h6 id="tab2-1-1">&#x8868; 2-1-1: &#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8; Location &#x306E;&#x8A2D;&#x5B9A; </h6>
+<table>
+<thead>
+<tr>
+<th>&#x8A2D;&#x5B9A;&#x9805;&#x76EE;</th>
+<th>&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x5024;</th>
+<th>&#x8AAC;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>&#x300C;Label&#x300D;</strong></td>
+<td><code>Location</code></td>
+<td>&#x4F5C;&#x6210;&#x3059;&#x308B;&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x8868;&#x793A;&#x540D;</td>
+</tr>
+<tr>
+<td><strong>&#x300C;Id&#x300D;</strong></td>
+<td><code>Location</code></td>
+<td>&#x4F5C;&#x6210;&#x3059;&#x308B;&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x3092;&#x8B58;&#x5225;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;ID&#x3002;Label&#x3068;&#x540C;&#x3058;&#x5024;&#x304C;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/create_bo_location.png" alt="&#x300C;New Business Object&#x300D;&#x30DD;&#x30C3;&#x30D7;&#x30A2;&#x30C3;&#x30D7;&#x30FB;&#x30C0;&#x30A4;&#x30A2;&#x30ED;&#x30B0;"></p>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-4&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 4&#x3011;</h5>
+<p>&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x304C;&#x4F5C;&#x6210;&#x3055;&#x308C;&#x305F;&#x3089;&#x3001; <strong>&#x300C;Fields&#x300D;</strong> &#x30BF;&#x30D6;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x307E;&#x3059;&#x3002;
+5&#x3064;&#x306E;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x304C;&#x5B9A;&#x7FA9;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<ul>
+<li><strong>Id</strong>: &#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x4E00;&#x610F;&#x306B;&#x8B58;&#x5225;&#x3059;&#x308B; ID</li>
+<li><strong>creationDate</strong>: &#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x4F5C;&#x6210;&#x65E5;&#x6642;</li>
+<li><strong>lastUpdateDate</strong>: &#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x6700;&#x7D42;&#x66F4;&#x65B0;&#x65E5;&#x6642;</li>
+<li><strong>createdBy</strong>: &#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x4F5C;&#x6210;&#x3057;&#x305F;&#x30E6;&#x30FC;&#x30B6;&#x30FC;</li>
+<li><strong>lastUpdatedBy</strong>: &#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x66F4;&#x65B0;&#x3057;&#x305F;&#x30E6;&#x30FC;&#x30B6;&#x30FC;</li>
+</ul>
+<p><img src="images/location_fields.png" alt="&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8; Location &#x306E; Fields &#x30BF;&#x30D6;&#x30FB;&#x30DA;&#x30FC;&#x30B8;"></p>
+<h3 id="&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;-name-&#x306E;&#x4F5C;&#x6210;">&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9; name &#x306E;&#x4F5C;&#x6210;</h3>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-1&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 1&#x3011;</h5>
+<p>&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8; Location &#x306E; <strong>&#x300C;Fields&#x300D;</strong> &#x30BF;&#x30D6;&#x30FB;&#x30DA;&#x30FC;&#x30B8;&#x306E; <strong>&#x300C;+ New Field&#x300D;</strong> &#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-2&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 2&#x3011;</h5>
+<p>&#x30DD;&#x30C3;&#x30D7;&#x30A2;&#x30C3;&#x30D7;&#x30FB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x305F;&#x3089;&#x3001;&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x306E;&#x8A2D;&#x5B9A;&#x3092;&#x300E;&#x8868; 2-1-2&#x300F;&#x306E;&#x3088;&#x3046;&#x306B;&#x8A2D;&#x5B9A;&#x3057;&#x3001;
+<img src="../icons/vbcsca_create_icon.png" alt="Create &#x30A2;&#x30A4;&#x30B3;&#x30F3;">
+&#xFF08;Create&#xFF09;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h6 id="&#x8868;-2-1-2-&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;-name-&#x306E;&#x8A2D;&#x5B9A;">&#x8868; 2-1-2: &#x8FFD;&#x52A0;&#x3059;&#x308B;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9; Name &#x306E;&#x8A2D;&#x5B9A;</h6>
+<table>
+<thead>
+<tr>
+<th>&#x8A2D;&#x5B9A;&#x9805;&#x76EE;</th>
+<th>&#x8A2D;&#x5B9A;&#x3059;&#x308B;&#x5024;</th>
+<th>&#x8AAC;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>&#x300C;Label&#x300D;</strong></td>
+<td><code>Name</code></td>
+<td>&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x306E;&#x30E9;&#x30D9;&#x30EB;</td>
+</tr>
+<tr>
+<td><strong>&#x300C;Id&#x300D;</strong></td>
+<td><code>Name</code></td>
+<td>&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x3092;&#x8B58;&#x5225;&#x3059;&#x308B;&#x305F;&#x3081;&#x306E;ID</td>
+</tr>
+<tr>
+<td><strong>&#x300C;Type&#x300D;</strong></td>
+<td><strong>&#x300C;String&#x300D;</strong> <img src="../icons/vbcsca_textfield_icon.png" alt="String &#x30A2;&#x30A4;&#x30B3;&#x30F3;"></td>
+<td>&#x8FFD;&#x52A0;&#x3059;&#x308B;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x578B;</td>
+</tr>
+</tbody>
+</table>
+<p><img src="images/location_name.png" alt="&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8; Location &#x306B; Name &#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9;&#x3092;&#x8FFD;&#x52A0;"></p>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-3&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 3&#x3011;</h5>
+<p>&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9; name &#x304C;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x308B;&#x3068;&#x753B;&#x9762;&#x306E;&#x53F3;&#x7AEF;&#x306E;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x30FB;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x306B; name &#x306E;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
+<strong>&#x300C;Constraints&#x300D;</strong> &#x306E;&#x4E0B;&#x306B;&#x3042;&#x308B; <strong>&#x300C;Required&#x300D;</strong> &#x3092;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="images/location_name_property.png" alt="&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9; name &#x306E;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x30FB;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x3067;&#x300C;Required&#x300D;&#x3092;&#x30C1;&#x30A7;&#x30C3;&#x30AF;"></p>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-4&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 4&#x3011;</h5>
+<p>&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x30FB;&#x30A8;&#x30C7;&#x30A3;&#x30BF;&#x3067; <strong>&#x300C;Required&#x300D;</strong> &#x3092;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x3001;&#x30D5;&#x30A3;&#x30FC;&#x30EB;&#x30C9; name &#x306F;&#x5FC5;&#x9808;&#x30C7;&#x30FC;&#x30BF;&#x9805;&#x76EE;&#x306B;&#x8A2D;&#x5B9A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
+&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x4F5C;&#x6210;&#x3084;&#x7DE8;&#x96C6;&#x30D5;&#x30A9;&#x30FC;&#x30E0;&#x3067;&#x3001;&#x5024;&#x304C;&#x5165;&#x529B;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x304B;&#x3069;&#x3046;&#x304B;&#x81EA;&#x52D5;&#x7684;&#x306B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x3055;&#x308C;&#x308B;&#x3088;&#x3046;&#x306B;&#x306A;&#x308A;&#x307E;&#x3059;&#x3002;
+<strong>&#x300C;Required&#x300D;</strong> &#x5217;&#x306B;&#x30C1;&#x30A7;&#x30C3;&#x30AF;&#x30FB;&#x30DE;&#x30FC;&#x30AF;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="images/location_fields2.png" alt="&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8; Location &#x306E; Fields &#x30BF;&#x30D6;&#x30FB;&#x30DA;&#x30FC;&#x30B8;"></p>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-5&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 5&#x3011;</h5>
+<p><strong>&#x300C;Endpoints&#x300D;</strong> &#x30BF;&#x30D6;&#x30FB;&#x30DA;&#x30FC;&#x30B8;&#x3092;&#x958B;&#x304F;&#x3068;&#x3001;&#x3053;&#x306E;&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x53C2;&#x7167;&#x3001;&#x4F5C;&#x6210;&#x3001;&#x66F4;&#x65B0;&#x3001;&#x524A;&#x9664;&#x306E;&#x305F;&#x3081;&#x306E; REST API &#x306E;&#x30A8;&#x30F3;&#x30C9;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x304C;&#x4E00;&#x89A7;&#x3067;&#x304D;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="images/location_endpoinsts.png" alt="&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8; Location &#x306E; Endpoints &#x30BF;&#x30D6;&#x30FB;&#x30DA;&#x30FC;&#x30B8;"></p>
+<p>&#x305D;&#x308C;&#x305E;&#x308C;&#x306E;&#x884C;&#x306F;&#x5DE6;&#x304B;&#x3089;&#x3001;HTTP&#x30E1;&#x30BD;&#x30C3;&#x30C9;&#x3001;&#x30A8;&#x30F3;&#x30C9;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306E;URL&#x3001;&#x30A8;&#x30F3;&#x30C9;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x3092;&#x8B58;&#x5225;&#x3059;&#x308B;&#x540D;&#x524D;&#x3001;&#x30A8;&#x30F3;&#x30C9;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x306E;&#x8AAC;&#x660E;&#x304C;&#x8A18;&#x8FF0;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h3 id="&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;">&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;</h3>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-1&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 1&#x3011;</h5>
+<p><a href="Location.csv">Location.csv</a> &#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x307E;&#x3059;&#x3002;
+Location.csv &#x306B;&#x306F;&#x3001;4&#x4EF6;&#x306E;&#x6240;&#x5728;&#x5730;&#x30C7;&#x30FC;&#x30BF;&#x304C;&#x542B;&#x307E;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-2&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 2&#x3011;</h5>
+<p>&#x30A2;&#x30FC;&#x30C6;&#x30A3;&#x30D5;&#x30A1;&#x30AF;&#x30C8;&#x30FB;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x306E;&#x53F3;&#x4E0A;&#x90E8;&#x306B;&#x8868;&#x793A;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;
+<img src="../icons/vbcsca_menu_icon.png" alt="&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x30FB;&#x30A2;&#x30A4;&#x30B3;&#x30F3;">
+&#xFF08;<strong>&#x300C;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x300D;</strong>&#xFF09;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;
+&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x304B;&#x3089;&#x3001; <strong>&#x300C;Data Manager&#x300D;</strong> &#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="images/bo_menu_data_manager.png" alt="&#x30A2;&#x30FC;&#x30C6;&#x30A3;&#x30D5;&#x30A1;&#x30AF;&#x30C8;&#x30FB;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x306E;&#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x304B;&#x3089;&#x300C;Data Manager&#x300D;&#x3092;&#x9078;&#x629E;"></p>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-3&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 3&#x3011;</h5>
+<p><strong>&#x300C;Data Manager&#x300D;</strong> &#x30BF;&#x30D6;&#x30FB;&#x30DA;&#x30FC;&#x30B8;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
+<strong>&#x300C;Import from File&#x300D;</strong> &#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="images/data_manager_page.png" alt="Data Manager &#x30BF;&#x30D6;&#x30FB;&#x30DA;&#x30FC;&#x30B8;&#x3067;&#x300C;Import from File&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;"></p>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-4&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 4&#x3011;</h5>
+<p><strong>&#x300C;Confirm Import Data&#x300D;</strong> &#x30C0;&#x30A4;&#x30A2;&#x30ED;&#x30B0;&#x30FB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
+<strong>&#x300C;Upload a file or drag it here&#x300D;</strong> &#x3068;&#x66F8;&#x304B;&#x308C;&#x305F;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x958B;&#x304F;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x306E;&#x3067;&#x3001;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x305F; <code>Location.csv</code> &#x3092;&#x958B;&#x304D;&#x3001; <strong>&#x300C;Import&#x300D;</strong> &#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="images/confirm_import_data.png" alt="&#x300C;Confirm Import Data&#x300D;&#x30C0;&#x30A4;&#x30A2;&#x30ED;&#x30B0;&#x30FB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x3067; Locatiopn.csv &#x3092;&#x6307;&#x5B9A;&#x3057;&#x300C;Import&#x300D;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;"></p>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-5&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 5&#x3011;</h5>
+<p><strong>&#x300C;Import from File&#x300D;</strong> &#x30C0;&#x30A4;&#x30A2;&#x30ED;&#x30B0;&#x30FB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x306B;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x304C;&#x6210;&#x529F;&#x3057;&#x305F;&#x3053;&#x3068;&#x3092;&#x8868;&#x3059;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x305F;&#x3089;&#x3001; <strong>&#x300C;OK&#x300D;</strong> &#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="images/import_from_file.png" alt="&#x300C;Import from File&#x300D;&#x30C0;&#x30A4;&#x30A2;&#x30ED;&#x30B0;&#x30FB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x3067;&#x300C;OK&#x300D;&#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;"></p>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-6&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 6&#x3011;</h5>
+<p>&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30FB;&#x30CA;&#x30D3;&#x30B2;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30FB;&#x30A8;&#x30EA;&#x30A2;&#x306E; <strong>&#x300C;Business Objects&#x300D;</strong> &#x30BF;&#x30D6;&#x30FB;&#x30DA;&#x30FC;&#x30B8;&#x3067;&#x3001; <strong>&#x300C;Location&#x300D;</strong> &#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;
+<strong>&#x300C;Data&#x300D;</strong> &#x30BF;&#x30D6;&#x30FB;&#x30DA;&#x30FC;&#x30B8;&#x3092;&#x958B;&#x304F;&#x3068;&#x3001;&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x305F;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="images/location_data.png" alt="&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8; Location &#x306E; Data &#x30BF;&#x30D6;&#x30FB;&#x30DA;&#x30FC;&#x30B8;"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: パート2: ビジネス・オブジェクトの作成">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="create_bo_department.html" class="navigation navigation-next " aria-label="Next page: ビジネス・オブジェクト Department の作成">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ビジネス・オブジェクト Location の作成","level":"1.3.1","depth":2,"next":{"title":"ビジネス・オブジェクト Department の作成","level":"1.3.2","depth":2,"path":"contents/part2/create_bo_department.md","ref":"contents/part2/create_bo_department.md","articles":[]},"previous":{"title":"パート2: ビジネス・オブジェクトの作成","level":"1.3","depth":1,"path":"contents/part2/README.md","ref":"contents/part2/README.md","articles":[{"title":"ビジネス・オブジェクト Location の作成","level":"1.3.1","depth":2,"path":"contents/part2/create_bo_location.md","ref":"contents/part2/create_bo_location.md","articles":[]},{"title":"ビジネス・オブジェクト Department の作成","level":"1.3.2","depth":2,"path":"contents/part2/create_bo_department.md","ref":"contents/part2/create_bo_department.md","articles":[]},{"title":"ビジネス・オブジェクト Employee の作成","level":"1.3.3","depth":2,"path":"contents/part2/create_bo_employee.md","ref":"contents/part2/create_bo_employee.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"contents/part2/create_bo_location.md","mtime":"2018-07-25T23:19:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-25T23:29:07.975Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
