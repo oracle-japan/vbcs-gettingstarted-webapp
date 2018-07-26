@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>データのインポート · GitBook</title>
+        <title>レコードを削除するボタンの追加 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,8 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="edit_employee.html" />
     
-    
-    <link rel="prev" href="./" />
+    <link rel="prev" href="detail_employee.html" />
     
 
     </head>
@@ -406,7 +404,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.7.1" data-path="import_employee_data.html">
+        <li class="chapter " data-level="1.7.1" data-path="import_employee_data.html">
             
                 <a href="import_employee_data.html">
             
@@ -445,7 +443,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7.4" data-path="delete_employee.html">
+        <li class="chapter active" data-level="1.7.4" data-path="delete_employee.html">
             
                 <a href="delete_employee.html">
             
@@ -493,7 +491,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >データのインポート</a>
+        <a href="../.." >レコードを削除するボタンの追加</a>
     </h1>
 </div>
 
@@ -510,29 +508,22 @@
                                 
                                 <p><a href="../../">Oracle VBCS &#x306F;&#x3058;&#x3081;&#x3066;&#x306E; Web &#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x958B;&#x767A;</a> &gt;
 <a href="./">&#x30D1;&#x30FC;&#x30C8;6: Employee &#x306E;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x7DE8;&#x96C6;&#x3001;&#x8A73;&#x7D30;&#x30DA;&#x30FC;&#x30B8;&#x306E;&#x4F5C;&#x6210;</a></p>
-<h2 id="&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;">&#x30C7;&#x30FC;&#x30BF;&#x306E;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;</h2>
-<h5 id="part6-1-1">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 1&#x3011;</h5>
-<p><a href="Employee.csv">Employee.csv</a> &#x3092;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<h2 id="&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x524A;&#x9664;&#x3059;&#x308B;&#x30DC;&#x30BF;&#x30F3;&#x306E;&#x8FFD;&#x52A0;">&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x524A;&#x9664;&#x3059;&#x308B;&#x30DC;&#x30BF;&#x30F3;&#x306E;&#x8FFD;&#x52A0;</h2>
+<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-1&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 1&#x3011;</h5>
+<p>&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30FB;&#x30C7;&#x30B6;&#x30A4;&#x30CA;&#x3067; Employees&#xFF08;&#x5F93;&#x696D;&#x54E1;&#x4E00;&#x89A7;&#xFF09;&#x30DA;&#x30FC;&#x30B8;&#x3092;&#x958B;&#x304D;&#x3001;<a href="../part3/add_employees_table.html">&#x300E;Employee &#x306E;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x306E;&#x4E00;&#x89A7;&#x3092;&#x8868;&#x793A;&#x3059;&#x308B;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x306E;&#x8FFD;&#x52A0;&#x300F;</a> &#x3067;&#x8FFD;&#x52A0;&#x3057;&#x305F; Table &#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;
+Table &#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x30D7;&#x30ED;&#x30D1;&#x30C6;&#x30A3;&#x30FB;&#x30A4;&#x30F3;&#x30B9;&#x30DA;&#x30AF;&#x30BF;&#x3067;
+<img src="../icons/vbcscp_qs_icon.png" alt="Quick Start &#x30A2;&#x30A4;&#x30B3;&#x30F3;">
+&#xFF08;Quick Start&#xFF09;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3001;<strong>&#x300C;Add Delete Action&#x300D;</strong> &#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="images/employees_table_qs3.png" alt="Employees &#x30DA;&#x30FC;&#x30B8;&#x306E; Table &#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E; Quick Start &#x30E1;&#x30CB;&#x30E5;&#x30FC;&#x304B;&#x3089;&#x300C;Add Delete Action&#x300D;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;"></p>
 <h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-2&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 2&#x3011;</h5>
-<p>&#x30A2;&#x30FC;&#x30C6;&#x30A3;&#x30D5;&#x30A1;&#x30AF;&#x30C8;&#x30FB;&#x30D6;&#x30E9;&#x30A6;&#x30B6;&#x3067;
-<img src="../icons/vbcsca_bo_icon.png" alt="Business Objects &#x30A2;&#x30A4;&#x30B3;&#x30F3;">
-&#xFF08;Business Objects&#xFF09;&#x30BF;&#x30D6;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p><strong>&#x300C;Add Delete Action&#x300D;</strong> &#x30C0;&#x30A4;&#x30A2;&#x30ED;&#x30B0;&#x30FB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
+<strong>&#x300C;Select Read Endpoint&#x300D;</strong> &#x30DA;&#x30FC;&#x30B8;&#x3067;&#x306F;&#x3001;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x3092;&#x524A;&#x9664;&#x3059;&#x308B;&#x969B;&#x306B;&#x30B3;&#x30FC;&#x30EB;&#x3059;&#x308B; REST &#x30A8;&#x30F3;&#x30C9;&#x30DD;&#x30A4;&#x30F3;&#x30C8;&#x3092;&#x6307;&#x5B9A;&#x3057;&#x307E;&#x3059;&#x3002;
+<strong>&#x300C;Business Objects&#x300D;</strong> &#x2192; <strong>&#x300C;Employee&#x300D;</strong> &#x30CE;&#x30FC;&#x30C9;&#x306E;&#x4E0B;&#x306B;&#x3042;&#x308B; <strong>&#x300C;DELETE /Employee/{Employee_Id}&#x300D;</strong> &#x304C;&#x9078;&#x629E;&#x3055;&#x308C;&#x3066;&#x3044;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x305F;&#x3089; <strong>&#x300C;Finish&#x300D;</strong> &#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="images/add_delete_action.png" alt="&#x300C;Add Edit Page&#x300D;&#x30C0;&#x30A4;&#x30A2;&#x30ED;&#x30B0;&#x30FB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x306E;&#x300C;Select Endpoint&#x300D;&#x30DA;&#x30FC;&#x30B8;"></p>
 <h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-3&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 3&#x3011;</h5>
-<p><strong>&#x300C;Employee&#x300D;</strong> &#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x3066;&#x30A2;&#x30D7;&#x30EA;&#x30B1;&#x30FC;&#x30B7;&#x30E7;&#x30F3;&#x30FB;&#x30C7;&#x30B6;&#x30A4;&#x30CA;&#x3067;&#x958B;&#x304D;&#x307E;&#x3059;&#x3002;
-<strong>&#x300C;Data&#x300D;</strong> &#x30BF;&#x30D6;&#x30FB;&#x30DA;&#x30FC;&#x30B8;&#x3067;
-<img src="vbcsnd_import_icon_transp.png" alt="Import from File &#x30A2;&#x30A4;&#x30B3;&#x30F3;">
-&#xFF08;Import from File&#xFF09;&#x30A2;&#x30A4;&#x30B3;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-4&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 4&#x3011;</h5>
-<p><strong>&#x300C;Confirm Import Data&#x300D;</strong> &#x30C0;&#x30A4;&#x30A2;&#x30ED;&#x30B0;&#x30FB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x307E;&#x3059;&#x3002;
-<strong>&#x300C;Row Handling&#x300D;</strong> &#x3067;&#x306F;&#x3001; <strong>&#x300C;Replace&#x300D;</strong> &#x3092;&#x9078;&#x629E;&#x3057;&#x307E;&#x3059;&#x3002;
-<strong>&#x300C;Replace&#x300D;</strong> &#x3092;&#x9078;&#x629E;&#x3059;&#x308B;&#x3068;&#x3001;&#x65E2;&#x5B58;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3092; CSV &#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x306E;&#x30C7;&#x30FC;&#x30BF;&#x3068;&#x7F6E;&#x304D;&#x63DB;&#x3048;&#x307E;&#x3059;&#x3002;</p>
-<p><img src="images/confirm_import_data.png" alt="&#x300C;Confirm Import Data&#x300D;&#x30C0;&#x30A4;&#x30A2;&#x30ED;&#x30B0;&#x30FB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;"></p>
-<p>&#x30C0;&#x30A4;&#x30A2;&#x30ED;&#x30B0;&#x30FB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x306E;&#x4E2D;&#x592E;&#x306B;&#x3042;&#x308B; <strong>&#x300C;Upload a file or drag it here&#x300D;</strong> &#x3068;&#x66F8;&#x304B;&#x308C;&#x305F;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x30D5;&#x30A1;&#x30A4;&#x30EB;&#x3092;&#x958B;&#x304F;&#x30A6;&#x30A3;&#x30F3;&#x30C9;&#x30A6;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x306E;&#x3067;&#x3001;&#x3053;&#x306E;&#x30D1;&#x30FC;&#x30C8;&#x306E;<a href="#part6-1-1">&#x30B9;&#x30C6;&#x30C3;&#x30D7;1</a>&#x3067;&#x30C0;&#x30A6;&#x30F3;&#x30ED;&#x30FC;&#x30C9;&#x3057;&#x305F; <code>Employee.csv</code> &#x3092;&#x958B;&#x304D;&#x3001; <strong>&#x300C;Import&#x300D;</strong> &#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-5&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 5&#x3011;</h5>
-<p><strong>&#x300C;Import from File&#x300D;</strong> &#x30C0;&#x30A4;&#x30A2;&#x30ED;&#x30B0;&#x30FB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x306B;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x304C;&#x6210;&#x529F;&#x3057;&#x305F;&#x3053;&#x3068;&#x3092;&#x8868;&#x3059;&#x30E1;&#x30C3;&#x30BB;&#x30FC;&#x30B8;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x305F;&#x3089;&#x3001; <strong>&#x300C;OK&#x300D;</strong> &#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<h5 id="&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7;-6&#x3011;">&#x3010;&#x30B9;&#x30C6;&#x30C3;&#x30D7; 6&#x3011;</h5>
-<p>&#x30D3;&#x30B8;&#x30CD;&#x30B9;&#x30FB;&#x30AA;&#x30D6;&#x30B8;&#x30A7;&#x30AF;&#x30C8; Employee &#x306E; <strong>&#x300C;Data&#x300D;</strong> &#x30BF;&#x30D6;&#x30FB;&#x30DA;&#x30FC;&#x30B8;&#x306B;&#x30A4;&#x30F3;&#x30DD;&#x30FC;&#x30C8;&#x3055;&#x308C;&#x305F;&#x30C7;&#x30FC;&#x30BF;&#x304C;&#x8868;&#x793A;&#x3055;&#x308C;&#x308B;&#x3053;&#x3068;&#x3092;&#x78BA;&#x8A8D;&#x3057;&#x307E;&#x3059;&#x3002;</p>
-<p><img src="images/employees_data.png" alt=""></p>
+<p><strong>&#x300C;Add Delete Action&#x300D;</strong> &#x30C0;&#x30A4;&#x30A2;&#x30ED;&#x30B0;&#x30FB;&#x30DC;&#x30C3;&#x30AF;&#x30B9;&#x3067; <strong>&#x300C;Finish&#x300D;</strong> &#x30DC;&#x30BF;&#x30F3;&#x3092;&#x30AF;&#x30EA;&#x30C3;&#x30AF;&#x3059;&#x308B;&#x3068;&#x3001;Employees &#x30DA;&#x30FC;&#x30B8;&#x306E; Heading &#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x3068; Table &#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x9593;&#x306E; Toolbar &#x30B3;&#x30F3;&#x30DD;&#x30FC;&#x30CD;&#x30F3;&#x30C8;&#x306E;&#x4E2D;&#x306B;&#x306F;&#x3001;<strong>&#x300C;Delete Employee&#x300D;</strong> &#x30DC;&#x30BF;&#x30F3;&#x304C;&#x914D;&#x7F6E;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;
+&#x8FFD;&#x52A0;&#x3055;&#x308C;&#x305F; <strong>&#x300C;Delete Employee&#x300D;</strong> &#x30DC;&#x30BF;&#x30F3;&#x306F;&#x3001;&#x30C6;&#x30FC;&#x30D6;&#x30EB;&#x3067;&#x30EC;&#x30B3;&#x30FC;&#x30C9;&#x304C;&#x9078;&#x629E;&#x3055;&#x308C;&#x308B;&#x307E;&#x3067;&#x306F;&#x7121;&#x52B9;&#x5316;&#x3055;&#x308C;&#x3066;&#x3044;&#x307E;&#x3059;&#x3002;</p>
+<p><img src="images/delete_employee.png" alt=""></p>
 
                                 
                                 </section>
@@ -560,14 +551,10 @@
 
             
                 
-                <a href="./" class="navigation navigation-prev " aria-label="Previous page: パート6: Employee のレコードの編集、詳細ページの作成">
+                <a href="detail_employee.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: レコードの詳細を表示するページの作成">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="edit_employee.html" class="navigation navigation-next " aria-label="Next page: レコードを編集するページの作成">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -576,7 +563,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"データのインポート","level":"1.7.1","depth":2,"next":{"title":"レコードを編集するページの作成","level":"1.7.2","depth":2,"path":"contents/part6/edit_employee.md","ref":"contents/part6/edit_employee.md","articles":[]},"previous":{"title":"パート6: Employee のレコードの編集、詳細ページの作成","level":"1.7","depth":1,"path":"contents/part6/README.md","ref":"contents/part6/README.md","articles":[{"title":"データのインポート","level":"1.7.1","depth":2,"path":"contents/part6/import_employee_data.md","ref":"contents/part6/import_employee_data.md","articles":[]},{"title":"レコードを編集するページの作成","level":"1.7.2","depth":2,"path":"contents/part6/edit_employee.md","ref":"contents/part6/edit_employee.md","articles":[]},{"title":"レコードの詳細を表示するページの作成","level":"1.7.3","depth":2,"path":"contents/part6/detail_employee.md","ref":"contents/part6/detail_employee.md","articles":[]},{"title":"レコードを削除するボタンの追加","level":"1.7.4","depth":2,"path":"contents/part6/delete_employee.md","ref":"contents/part6/delete_employee.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"contents/part6/import_employee_data.md","mtime":"2018-07-25T23:19:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-26T06:40:17.286Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"レコードを削除するボタンの追加","level":"1.7.4","depth":2,"previous":{"title":"レコードの詳細を表示するページの作成","level":"1.7.3","depth":2,"path":"contents/part6/detail_employee.md","ref":"contents/part6/detail_employee.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"contents/part6/delete_employee.md","mtime":"2018-07-25T23:19:27.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-26T06:40:17.286Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
