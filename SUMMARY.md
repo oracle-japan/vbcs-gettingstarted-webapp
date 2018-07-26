@@ -25,4 +25,4 @@
   * [データのインポート](contents/part6/import_employee_data.md)
   * [レコードを編集するページの作成](contents/part6/edit_employee.md)
   * [レコードの詳細を表示するページの作成](contents/part6/detail_employee.md)
-  * [レコードを削除するボタンの追加](delete_employee.md)
+  * [レコードを削除するボタンの追加](contents/part6/delete_employee.md)
