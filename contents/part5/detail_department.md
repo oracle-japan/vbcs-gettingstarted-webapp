@@ -15,26 +15,21 @@ Table コンポーネントのプロパティ・インスペクタで
 ##### 【ステップ 2】
 
 **「Add Detail Page」** ダイアログ・ボックスが表示されます。
-**「Select Read Endpoint」** ページでは、レコードのデータを取得する際にコールする REST エンドポイントを指定します。
-**「Business Objects」** → **「Department」** ノードの下にある **「GET /Department/{Department_Id}」** が選択されていることを確認したら **「Next」** ボタンをクリックします。
-
-![「Add Edit Page」ダイアログ・ボックスの「Select Endpoint」ページ](images/add_detail_page_select_ednpoint.png)
+**「Select Endpoint」** ページでは、レコードのデータを取得する際にコールする REST エンドポイントを指定します。
+**「Business Objects」** → **「Department」** を選択し、 **「Next」** ボタンをクリックします。
 
 ##### 【ステップ 3】
 
 **「Add Detail Page」** ダイアログ・ボックスの **「Page Details」** ページでは、ページに表示するビジネス・オブジェクトのフィールドを選択します。
 最初に、 **「Select fields」** で **「response」** ツリーの一番下に表示されている **「name」** をチェックします。
 
-![](images/add_detail_page_page_details.png)
-
 次に、**「response」** ツリーの **「locationObject」** → **「items」** → **「items[i]」** ノードの **「Name」** をチェックします。
-
-![](images/add_detail_page_page_details2.png)
 
 画面右側の **「Button label」** テキスト・フィールドの値を `詳細` に変更します。
 次に、**「Page Title」** テキスト・フィールドの値を `部門詳細` に変更します。
 
-**「Page name」** はデフォルトの値（`DepartmentDetail`）を使用することにして、**「Finish」** ボタンをクリックします。
+**「Page name」** は「DepartmentDetail」を入力します。
+**「Finish」** ボタンをクリックします。
 
 ##### 【ステップ 4】
 
@@ -42,5 +37,3 @@ Table コンポーネントのプロパティ・インスペクタで
 追加された **「詳細」** ボタンは、テーブルでレコードが選択されるまでは無効化されています。
 
 ![](images/department_detail.png)
-
-また、アーティファクト・ブラウザの Web Applications　タブ・ページで **「HRWebApp」** → **「flows」** → **「main」** ノードを展開すると、 **「DepartmentDetail」** ページが追加されています。

@@ -18,6 +18,6 @@
 
 ----
 1. [ビジネス・オブジェクト Location の作成](create_bo_location.md)
-2. [ビジネス・オブジェクト Department の作成](create_bo_location.md)
-3. [ビジネス・オブジェクト Location の作成](create_bo_location.md)
+2. [ビジネス・オブジェクト Department の作成](create_bo_department.md)
+3. [ビジネス・オブジェクト Employee の作成](create_bo_employee.md)
 ----

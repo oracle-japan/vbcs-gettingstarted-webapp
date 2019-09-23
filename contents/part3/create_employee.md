@@ -13,24 +13,22 @@
 
 追加された Table コンポーネントのプロパティ・インスペクタで
 <img src="../icons/vbcscp_qs_icon.png" alt="Quick Start アイコン">
-（Quick Start）タブを開き、**「Add Data」** をクリックします。
+（Quick Start）タブを開き、 **「Add Create page」** をクリックします。
 
 ##### 【ステップ 2】
 
 **「Add Create page」** ダイアログ・ボックスが表示されます。
 **「Select Endpoint」** ページでは、REST API のエンドポイントを選択します。
-**「Business Objects」** → **「Employee」** ノードの下の **「POST /Employee」** が選択されていることを確認したら、 **「Next」** ボタンをクリックします。
+**「Business Objects」** → **「Employee」** を選択し、 **「Next」** ボタンをクリックします。
 
 ##### 【ステップ 3】
 
 **「Add Create page」** ダイアログ・ボックスの **「Page Details」** ページでは、レコードを作成するフォームで値を指定する Employee ビジネス・オブジェクトのフィールドを選択します。
 **「name」**、**「hireDate」**、**「email」**、**「department」** をチェックします。
 
-![フォームで値を指定するフィールドを選択](images/create_employee_page_page_detail.png)
-
 画面右側の **「Button label」** テキスト・フィールドの値を `作成` に変更します。
 次に、**「Page Title」** テキスト・フィールドの値を `従業員レコードの作成` に変更します。
-**「Page name」** はデフォルトの値（CreateEmployee）を使用することにして、 **「Finish」** ボタンをクリックします。
+**「Page name」** は`CreateEmploye`を入力して **「Finish」** ボタンをクリックします。
 
 ##### 【ステップ 4】
 
@@ -38,8 +36,6 @@
 Toolbar コンポーネントの中には、**「作成」** ボタンが配置されています。
 
 ![Quick Start メニューで Add Create Page 実行後の Employees ページ](images/employees.png)
-
-また、アプリケーション・ナビゲーション・エリアの Web Applications　タブ・ページで **「HRWebApp」** → **「flows」** → **「main」** ノードを展開すると、 **「CreateEmployee」** ページが追加されています。
 
 ### 作成したページの動作確認
 
@@ -55,12 +51,6 @@ Toolbar コンポーネントの中には、**「作成」** ボタンが配置�
 ![CreateEmployee ページ](images/create_employee_live.png)
 
 ##### 【ステップ 3】
-
-**「Save」** ボタンがクリックされると、ページ・フロー main がオープンし、アプリケーションのページ・フローをビジュアルに表示します。
-
-![ページ・フロー main](images/main_page_flow2.png)
-
-##### 【ステップ 4】
 
 アーティファクト・ブラウザで **「Employees」** をクリックし、Employees（従業員一覧）ページをアプリケーション・デザイナの
 <img src="../icons/vbcscp_designer_icon.png" alt="Designer アイコン">
@@ -82,4 +72,4 @@ Employees ページをアプリケーション・デザイナで開きます。
 `div` タグや `h1` タグなど通常の HTML タグのほかに、`oj-table` など、名前が `oj-` で始まるタグが使用されています。
 `oj-` で名前が始まるタグは、 [Oracle JavaScript Extension Toolkit (JET)](http://oraclejet.org) が提供するコンポーネントです。
 
-もう一度 **「Code」** ボタンをクリックして、デザイナ・ビューに戻ります。
+**「Design」** ボタンをクリックして、デザイナ・ビューに戻ります。

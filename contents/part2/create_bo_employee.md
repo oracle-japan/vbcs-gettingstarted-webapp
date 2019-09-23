@@ -48,7 +48,7 @@
 |設定項目      |設定する値|
 |------------|--------|
 |**「Label」**|`Name`  |
-|**「Id」**   |`Name`  |
+|**「Id」**   |`name`  |
 |**「Type」** |**「String」** <img src="../icons/vbcsca_textfield_icon.png" alt="String アイコン"> を選択|
 
 ##### 【ステップ 3】
@@ -127,7 +127,7 @@
 
 4つのフィールドを追加したら、ビジネス・オブジェクト Employee の **「Endpoints」** タブ・ページを開きます。
 
-![ビジネス・オブジェクト Employee の Endpoints タブ・ページ](images/employee_endpoints.png)
+![ビジネス・オブジェクト Employee の Endpoints タブ・ページ](images/010.png)
 
 EmployeeはDepartmentを参照し、DepartmentはLocation を参照しているので、それぞれのノードを展開するとこのパートで作成した3つのビジネス・オブジェクトすべてにアクセスできることがわかります。
 

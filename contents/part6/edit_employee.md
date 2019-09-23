@@ -15,28 +15,22 @@ Table コンポーネントのプロパティ・インスペクタで
 ##### 【ステップ 2】
 
 **「Add Edit Page」** ダイアログ・ボックスが表示されます。
-**「Select Read Endpoint」** ページでは、編集するレコードのデータを取得する際にコールする REST エンドポイントを指定します。
+**「Select Endpoint」** ページでは、編集するレコードのデータを取得する際にコールする REST エンドポイントを指定します。
 **「Business Objects」** → **「Employee」** ノードの下にある **「GET /Employee/{Employee_Id}」** が選択されていることを確認したら **「Next」** ボタンをクリックします。
-
-![「Add Edit Page」ダイアログ・ボックスの「Select Read Endpoint」ページ](images/add_edit_page_select_read_endpoint.png)
 
 ##### 【ステップ 3】
 
 **「Add Edit Page」** ダイアログ・ボックスの **「Select Update Endpoint」** ページでは、レコードを更新する際にコールする REST エンドポイントを指定します。
-**「Business Objects」** → **「Employee」** ノードの下にある **「PATCH /Employee/{Employee_Id}」** が選択されていることを確認したら **「Next」** ボタンをクリックします。
-
-![「Add Edit Page」ダイアログ・ボックスの「Select Update Endpoint」ページ](images/add_edit_page_select_update_endpoint.png)
+**「Business Objects」** → **「Employee」** を選択します。 **「Next」** ボタンをクリックします。
 
 ##### 【ステップ 4】
 
 **「Add Edit Page」** ダイアログ・ボックスの **「Page Details」** ページの **「Select fields」** で **「name」** と **「hireDate」**、**「email」**、**「department」** を順番にチェックします。
 
-![「Add Edit Page」ダイアログ・ボックスの「Page Details」ページ](images/add_edit_page_page_details.png)
-
 画面右側の **「Button label」** テキスト・フィールドの値を `編集` に変更します。
 次に、**「Page Title」** テキスト・フィールドの値を `従業員レコードの作成` に変更します。
 
-**「Page name」** はデフォルトの値（`EditEmployee`）を使用することにして、**「Finish」** ボタンをクリックします。
+**「Page name」** に「`EditEmployee」を入力します。 **「Finish」** ボタンをクリックします。
 
 ##### 【ステップ 5】
 
@@ -45,4 +39,3 @@ Table コンポーネントのプロパティ・インスペクタで
 
 ![Employees ページ](images/edit_employee.png)
 
-また、アーティファクト・ブラウザの Web Applications　タブ・ページで **「HRWebApp」** → **「flows」** → **「main」** ノードを展開すると、 **「EditEmployee」** ページが追加されています。

@@ -17,7 +17,7 @@
 
 **「Department」** をクリックしてアプリケーション・デザイナで開きます。
 **「Data」** タブ・ページで
-<img src="vbcsnd_import_icon_transp.png" alt="Import from File アイコン">
+<img src="../icons/vbcsnd_import_icon_transp.png" alt="Import from File アイコン">
 （Import from File）アイコンをクリックします。
 
 ##### 【ステップ 4】

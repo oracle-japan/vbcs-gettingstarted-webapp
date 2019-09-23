@@ -46,39 +46,31 @@ Heading コンポーネントのプロパティ・インスペクタで、 **「
 ##### 【ステップ 3】
 
 **「Add Data」** ダイアログ・ボックスが表示されます。
-**「Choose an Endpoint」** ページでは、テーブルに表示するデータを取得する REST エンドポイントを選択します。
-**「Business Objects」** → **「Employee」** ノードを展開し、**「GET /Employee」** を選択したら **「Next」** ボタンをクリックします。
+**「Locate Data」** ページでは、テーブルに表示するデータを取得する REST エンドポイントを選択します。
+**「Business Objects」** → **「Employee」** を選択します。
 
 ##### 【ステップ 4】
 
-**「Add Data」** ダイアログ・ボックスの **「Choose Columns」** ページでは、テーブルの列を選択します。
+**「Add Data」** ダイアログ・ボックスの **「Bind Data」** ページでは、テーブルの列を選択します。
 **「item[i]」** ノードの下に表示されている **「id」**、**「name」**、**「hireDate」**、**「email」** を順番にチェックします。
-
-![「Add Data」** ダイアログ・ボックスの「Choose Columns」ページ](images/employees_add_data_choose_columns.png)
 
 **「Add Data」** ダイアログ・ボックスの右側に表示される **「Columns」** リストに、次の順番で表示されていることを確認します。
 
-1. items/id
-2. items/name
-3. items/hireDate
-4. items/email
+1. id
+2. name
+3. hireDate
+4. email
 
-表示されている順番が異なる場合は、ハンバーガー・アイコン
-<img src="../icons/vbcs_hamburger.png" alt="ハンバーガー・アイコン">
-をドラッグ ＆ ドロップして順番を入れ替えます。
+表示されている順番が異なる場合は、<img src="../icons/002.png" alt="ドラッガブルボタン">部分をドラッグ ＆ ドロップして順番を入れ替えます。
 
 ##### 【ステップ 5】
 
 **「Add Data」** ダイアログ・ボックスの **「Choose an Endpoint」** ページで、 **「departmentObject」** → **「items」** ノードを展開すると、その下にある **「item[i]」** ノードが自動的に展開されます。
 **「Name」** をチェックしてから **「Next」** ボタンをクリックします。
 
-![「Add Data」** ダイアログ・ボックスの「Choose Columns」ページ](images/employees_add_data_choose_columns2.png)
-
 ##### 【ステップ 6】
 
-**「Add Data」** ダイアログ・ボックスの **「Define Query Parameters」** ページでは、そのまま **「Finish」** ボタンをクリックします。
-
-![テーブルが追加された状態](images/department_table.png)
+**「Add Data」** ダイアログ・ボックスの **「Define Query」** ページでは、そのまま **「Finish」** ボタンをクリックします。
 
 ##### 【ステップ 7】
 
@@ -93,4 +85,4 @@ Heading コンポーネントのプロパティ・インスペクタで、 **「
 |Hire Date|雇用日 |
 |Name （**「Table Columns」** リストの上から2番目）|所属部門|
 
-![列ヘッダーのテキストを変更](images/employees_table_empty.png)
+![列ヘッダーのテキストを変更](images/027.png)

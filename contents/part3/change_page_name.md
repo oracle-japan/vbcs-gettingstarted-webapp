@@ -31,17 +31,9 @@
 
 ##### 【ステップ 4】
 
-アーティファクト・ブラウザで、 **「main」** ノードをクリックします。
-<img src="../icons/vbcs_page_flow_icon.png" alt="Page Flow アイコン">
-タブ・ページで main-start ページの名前が Departments に変更されていることを確認します。
-
-![main ページ・フロー](images/main_page_flow_rename.png)
-
-##### 【ステップ 5】
-
 アプリケーション・デザイナの
 <img src="../icons/vbcs_settings_icon.png" alt="Settings アイコン">
 （Settings）をクリックします。
-**「Default Page」** で、 **「Departments」** が選択されていることを確認します。
+**「Default Page」** で、 **「departments」** が選択されていることを確認します。
 
-![main ページ・フローの「Settings」ページ](images/main_settings.png)
+![main ページ・フローの「Settings」ページ](images/028.png)

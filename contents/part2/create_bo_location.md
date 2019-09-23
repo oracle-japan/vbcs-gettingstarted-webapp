@@ -34,7 +34,7 @@
 
 ![「New Business Object」ポップアップ・ダイアログ](images/create_bo_location.png)
 
-#####【ステップ 4】
+##### 【ステップ 4】
 
 ビジネス・オブジェクトが作成されたら、 **「Fields」** タブをクリックます。
 5つのフィールドが定義されています。
@@ -64,7 +64,7 @@
 |設定項目      |設定する値|説明|
 |------------|--------|---|
 |**「Label」**|`Name`  |追加するフィールドのラベル|
-|**「Id」**   |`Name`  |追加するフィールドを識別するためのID|
+|**「Id」**   |`name`  |追加するフィールドを識別するためのID。Labelを入力すると自動的に設定されます。|
 |**「Type」** |**「String」** <img src="../icons/vbcsca_textfield_icon.png" alt="String アイコン">|追加するフィールドのデータ型|
 
 ![ビジネス・オブジェクト Location に Name フィールドを追加](images/location_name.png)
@@ -74,9 +74,9 @@
 フィールド name が追加されると画面の右端のプロパティ・エディタに name のプロパティが表示されます。
 **「Constraints」** の下にある **「Required」** をチェックします。
 
-![フィールド name のプロパティ・エディタで「Required」をチェック](images/location_name_property.png)
+![フィールド name のプロパティ・エディタで「Required」をチェック](images/005.png)
 
-#####【ステップ 4】
+##### 【ステップ 4】
 
 プロパティ・エディタで **「Required」** をチェックすると、フィールド name は必須データ項目に設定されます。
 レコードの作成や編集フォームで、値が入力されているかどうか自動的にチェックされるようになります。
@@ -88,7 +88,7 @@
 
 **「Endpoints」** タブ・ページを開くと、このビジネス・オブジェクトのデータの参照、作成、更新、削除のための REST API のエンドポイントが一覧できます。
 
-![ビジネス・オブジェクト Location の Endpoints タブ・ページ](images/location_endpoinsts.png)
+![ビジネス・オブジェクト Location の Endpoints タブ・ページ](images/006.png)
 
 それぞれの行は左から、HTTPメソッド、エンドポイントのURL、エンドポイントを識別する名前、エンドポイントの説明が記述されています。
 
@@ -96,7 +96,7 @@
 
 ##### 【ステップ 1】
 
-[Location.csv](Location.csv) をダウンロードします。
+[Location.csv](https://raw.githubusercontent.com/oracle-japan/vbcs-gettingstarted-webapp/master/contents/part2/Location.csv) をダウンロードします。
 Location.csv には、4件の所在地データが含まれています。
 
 ##### 【ステップ 2】
@@ -113,7 +113,7 @@ Location.csv には、4件の所在地データが含まれています。
 **「Data Manager」** タブ・ページが表示されます。
 **「Import from File」** ボックスをクリックします。
 
-![Data Manager タブ・ページで「Import from File」をクリック](images/data_manager_page.png)
+![Data Manager タブ・ページで「Import from File」をクリック](images/007.png)
 
 ##### 【ステップ 4】
 

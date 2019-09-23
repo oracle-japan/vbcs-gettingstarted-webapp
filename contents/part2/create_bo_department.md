@@ -50,7 +50,7 @@
 |設定項目      |設定する値|
 |------------|--------|
 |**「Label」**|`Name`  |
-|**「Id」**   |`Name`  |
+|**「Id」**   |`name`  |
 |**「Type」** |**「String」** <img src="../icons/vbcsca_textfield_icon.png" alt="String アイコン"> を選択|
 
 ##### 【ステップ 3】
@@ -58,7 +58,7 @@
 フィールド Name が追加されると画面の右端のプロパティ・エディタに Name のプロパティが表示されます。
 **「Constraints」** の下にある **「Required」** をチェックします。
 
-#####【ステップ 4】
+##### 【ステップ 4】
 
 プロパティ・エディタで **「Required」** をチェックすると、追加されたフィールド Name は必須データ項目に設定されます。
 **「Required」** 列にチェック・マークが表示されていることを確認します。
@@ -85,13 +85,13 @@
 |**「Reference Business Object」**|**「Location」** を選択|作成するフィールドがデータを参照するビジネス・オブジェクトを選択|
 |**「Default Display Field」**    |**「Name」** を選択|データを編集する際のリストの表示に使用される、参照先のビジネス・オブジェクト（今回は Location）のフィールドを選択|
 
-![ビジネス・オブジェクト Location にフィールド location を作成](images/department_location.png)
+![ビジネス・オブジェクト Location にフィールド location を作成](images/008.png)
 
 ##### 【ステップ 3】
 
 ビジネス・オブジェクト Location の **「Endpoints」** タブ・ページを開きます。
 ビジネス・オブジェクト Location のデータを操作するためのエンドポイントが一覧できます。
 
-![ビジネス・オブジェクト Location の「Endpoints」タブ・ページ](images/department_endpoints.png)
+![ビジネス・オブジェクト Location の「Endpoints」タブ・ページ](images/009.png)
 
 ビジネス・オブジェクト Department は Location を参照しているので、 `/Department/{Department_Id}/child/locationObject` というエンドポイントで Department が参照している Location のデータにアクセスできます。
