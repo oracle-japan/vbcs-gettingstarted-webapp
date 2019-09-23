@@ -52,4 +52,6 @@
 <img src="../icons/vbcsnd_run_icon.png" alt="Run アイコン">
 （Run） ボタンをクリックします。
 
-Employees （従業員一覧）ページの **「従業員一覧」** ボタンをクリックし、Departments （部門一覧）ページにナビゲートされることを確認します。
+Employees （従業員一覧）ページの **「従業員一覧」** ボタンをクリックし、Departments （部門一覧）ページにナビゲートされることを確認します。  
+
+次に[パート5: Department のレコードの編集、詳細ページの作成](../part5/README.md)に進みます。

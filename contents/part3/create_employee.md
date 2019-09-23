@@ -72,4 +72,6 @@ Employees ページをアプリケーション・デザイナで開きます。
 `div` タグや `h1` タグなど通常の HTML タグのほかに、`oj-table` など、名前が `oj-` で始まるタグが使用されています。
 `oj-` で名前が始まるタグは、 [Oracle JavaScript Extension Toolkit (JET)](http://oraclejet.org) が提供するコンポーネントです。
 
-**「Design」** ボタンをクリックして、デザイナ・ビューに戻ります。
+**「Design」** ボタンをクリックして、デザイナ・ビューに戻ります。  
+
+次に[ページの名前の変更](change_page_name.md)に進みます。

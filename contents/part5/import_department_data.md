@@ -41,4 +41,6 @@
 
 ビジネス・オブジェクト Department の **「Data」** タブ・ページにインポートされたデータが表示されることを確認します。
 
-![ビジネス・オブジェクト Department の Data タブ・ページ](images/bo_department_data.png)
+![ビジネス・オブジェクト Department の Data タブ・ページ](images/bo_department_data.png)  
+
+次に[レコードを編集するページの作成](edit_department.md)に進みます。

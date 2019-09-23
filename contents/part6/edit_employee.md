@@ -39,3 +39,4 @@ Table コンポーネントのプロパティ・インスペクタで
 
 ![Employees ページ](images/edit_employee.png)
 
+次に[レコードの詳細を表示するページの作成](detail_employee.md)に進みます。

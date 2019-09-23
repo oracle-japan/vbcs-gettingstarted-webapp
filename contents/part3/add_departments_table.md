@@ -130,4 +130,6 @@ main-start ページには、 **「departmentListSDP」** という名前の変�
 - **「Table Columns」** リストの上から二番目の **「Name」** をクリックして `部門名` に変更します。
 - **「Table Columns」** リストの一番下に表示されている **「Name」** をクリックして `所在地` に変更します。
 
-![列ヘッダーのテキストの変更](images/016.png)
+![列ヘッダーのテキストの変更](images/016.png)  
+
+次に[Department のレコードを作成するページの追加](create_department.md)に進みます。

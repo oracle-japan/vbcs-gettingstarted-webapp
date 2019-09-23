@@ -134,3 +134,5 @@ Location.csv には、4件の所在地データが含まれています。
 **「Data」** タブ・ページを開くと、追加されたレコードが表示されます。
 
 ![ビジネス・オブジェクト Location の Data タブ・ページ](images/location_data.png)
+
+次に[ビジネス・オブジェクト Departmentの作成](create_bo_department)に進みます。

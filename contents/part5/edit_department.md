@@ -38,4 +38,6 @@ Table コンポーネントのプロパティ・インスペクタで
 **「Add Edit Page」** ダイアログ・ボックスで **「Finish」** ボタンをクリックすると、Departments ページの Heading コンポーネントと Table コンポーネントの間の Toolbar コンポーネントの中には、**「編集」** ボタンが配置されています。
 追加された **「編集」** ボタンは、テーブルでレコードが選択されるまでは無効化されています。
 
-![Department ページ](images/edit_department.png)
+![Department ページ](images/edit_department.png)  
+
+次に[レコードの詳細を表示するページの作成](detail_department.md)に進みます。

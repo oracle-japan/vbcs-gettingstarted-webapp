@@ -85,4 +85,6 @@ Heading コンポーネントのプロパティ・インスペクタで、 **「
 |Hire Date|雇用日 |
 |Name （**「Table Columns」** リストの上から2番目）|所属部門|
 
-![列ヘッダーのテキストを変更](images/027.png)
+![列ヘッダーのテキストを変更](images/027.png)　　
+
+次に[Employee のレコードを作成するページの追加](create_employee.md)に進みます。

@@ -9,10 +9,6 @@
 
 にボタンを追加し、それぞれのページ間のナビゲーションを設定します。
 
-このパートが終わると、アプリケーションのナビゲーションは次のように設定されます。
-
-![ページ・フロー](images/page_flow.png)
-
 ----
 1. [Departments ページから Employees ページへのナビゲーション](departments_to_employees.md)
 2. [Employees ページから Departments ページへのナビゲーション](employees_to_departments.md)

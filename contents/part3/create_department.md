@@ -7,7 +7,7 @@
 
 ##### 【ステップ 1】
 
-アプリケーション・デザイナで main-start ページを開き、[『Department のレコードの一覧を表示するテーブルの追加』](add_departments_table.png) で追加した Table コンポーネントを選択します。
+アプリケーション・デザイナで main-start ページを開き、[『Department のレコードの一覧を表示するテーブルの追加』](add_departments_table.md) で追加した Table コンポーネントを選択します。
 Table コンポーネントのプロパティ・インスペクタで
 <img src="../icons/vbcscp_qs_icon.png" alt="Quick Start アイコン">
 （Quick Start）アイコンをクリックし、**「Add Create Page」** をクリックします。
@@ -137,4 +137,6 @@ clickイベントが発生したときはアクション・チェーン **「cre
 
 ![「Map Variables To parameters」ダイアログ・ボックス](images/025.png)
 
-パラメータ **「body」** には CreateDepartment ページの変数 `department` がマップされていることを確認したら、 **「Cancel」** をクリックしてダイアログ・ボックスを閉じます。
+パラメータ **「body」** には CreateDepartment ページの変数 `department` がマップされていることを確認したら、 **「Cancel」** をクリックしてダイアログ・ボックスを閉じます。  
+
+次に[Employee のレコードの一覧を表示するページの追加](add_employees_table.md)に進みます。

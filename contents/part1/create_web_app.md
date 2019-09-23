@@ -17,7 +17,7 @@ VBCS のビジュアル・アプリケーションは、1つ以上のWebアプ�
 
 ##### 【ステップ 2】
 
-**「Create Web Application」** ダイアログ・ボックスが表示されたら、**「Id」** フィールドに `HRWebApp` と入力し、 **「Create」** ボタンをクリックします。
+**「Create Web Application」** ダイアログ・ボックスが表示されたら、**「Application Name」** フィールドに `HRWebApp` と入力し、**Navigation Style**に`None`を選択し、 **「Create」** ボタンをクリックします。
 
 ![「Create Web Application」ダイアログ・ボックス](images/004.png)
 
@@ -34,3 +34,5 @@ HRWebApp のアーティファクトが生成されます。
 **「flows」** ノードと **「main」** ノードを展開すると **「main-start」** ページが表示されます。
 
 ![HRWebApp が生成されたアーティファクト・ブラウザ](images/artifact_browser_hrwebapp.png)
+
+次に[パート2:ビジネス・オブジェクトの作成](../part2/README.md)に進みます。

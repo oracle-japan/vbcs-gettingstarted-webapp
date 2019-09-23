@@ -146,4 +146,6 @@ EmployeeはDepartmentを参照し、DepartmentはLocation を参照している�
 
 ビジュアル・アプリケーション内に定義されているすべてのビジネス・オブジェクトの関連を表すダイアグラムが表示されます。
 
-![ビジネス・オブジェクトのダイアグラム](images/bo_diagram.png)
+![ビジネス・オブジェクトのダイアグラム](images/bo_diagram.png)  
+
+次に[パート3:ビジネス・オブジェクトを参照・作成するページの作成](../part3/README.md)に進みます。

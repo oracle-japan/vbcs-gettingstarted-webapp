@@ -36,4 +36,6 @@ Table コンポーネントのプロパティ・インスペクタで
 **「Add Detail Page」** ダイアログ・ボックスで **「Finish」** ボタンをクリックすると、Departments ページの Heading コンポーネントと Table コンポーネントの間の Toolbar コンポーネントの中には、**「詳細」** ボタンが配置されています。
 追加された **「詳細」** ボタンは、テーブルでレコードが選択されるまでは無効化されています。
 
-![](images/department_detail.png)
+![](images/department_detail.png)　
+
+次に[パート6: Employee のレコードの編集、詳細ページの作成](../part6/README.md)に進みます。

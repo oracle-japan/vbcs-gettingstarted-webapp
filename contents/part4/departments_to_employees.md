@@ -74,3 +74,5 @@
 ![「Run」アイコンをクリック](images/run_departments_to_employees.png)
 
 Departments （部門一覧）ページの **「従業員一覧」** ボタンをクリックし、Employees （従業員一覧）ページにナビゲートされることを確認します。
+
+次に[Departments ページから Employees ページへのナビゲーション](employees_to_departments.md)に進みます。

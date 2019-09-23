@@ -39,3 +39,5 @@
 ビジネス・オブジェクト Employee の **「Data」** タブ・ページにインポートされたデータが表示されることを確認します。
 
 ![](images/employees_data.png)
+
+次に[レコードを編集するページの作成](edit_employee.md)に進みます。

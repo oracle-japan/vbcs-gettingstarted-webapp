@@ -49,7 +49,10 @@ Welcomeスクリーンには、VBCSでアプリケーションを作成するた
 * Business Objects
 * Mobile Applications
 * Web Applications
-* Processes Cloud
 * Components
+* Processes
 
-画面上部のアプリケーションの名前（Application nameとして指定したテキスト）の右隣に表示される **「dev」** と **「1.0」** はそれぞれ、アプリケーションのステータス（development: 開発中を表す）とバージョンを表しています。
+
+画面上部のアプリケーションの名前（Application nameとして指定したテキスト）の右隣に表示される **「dev」** と **「1.0」** はそれぞれ、アプリケーションのステータス（development: 開発中を表す）とバージョンを表しています。  
+  
+次に[Webアプリケーションの作成](create_web_app.md)に進みます。
