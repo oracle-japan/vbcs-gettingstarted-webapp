@@ -135,4 +135,4 @@ Location.csv には、4件の所在地データが含まれています。
 
 ![ビジネス・オブジェクト Location の Data タブ・ページ](images/location_data.png)
 
-次に[ビジネス・オブジェクト Departmentの作成](create_bo_department)に進みます。
+次に[ビジネス・オブジェクト Departmentの作成](create_bo_department.md)に進みます。

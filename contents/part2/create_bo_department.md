@@ -10,17 +10,17 @@
 
 ### ビジネス・オブジェクトの作成
 
-#####【ステップ 1】
+##### 【ステップ 1】
 
 アーティファクト・ブラウザの **「Business Objects」** タブ
 <img src="../icons/vbcsca_bo_icon.png">
 をクリックします。
 
-#####【ステップ 2】
+##### 【ステップ 2】
 
 アーティファクト・ブラウザの右上部にある **「+」** （Create Business Object）アイコンをクリックします。
 
-#####【ステップ 3】
+##### 【ステップ 3】
 
 **「New Business Object」** ポップアップ・ボックスが表示されたら、[表 2-2-1](#tab2-2-1) のように設定して、
 <img src="../icons/vbcsca_create_icon.png" alt="Create アイコン">
@@ -96,4 +96,4 @@
 
 ビジネス・オブジェクト Department は Location を参照しているので、 `/Department/{Department_Id}/child/locationObject` というエンドポイントで Department が参照している Location のデータにアクセスできます。  
 
-次に[ビジネス・オブジェクト Employeeの作成](create_bo_employee)に進みます。
+次に[ビジネス・オブジェクト Employeeの作成](create_bo_employee.md)に進みます。
