@@ -74,7 +74,7 @@
 フィールド name が追加されると画面の右端のプロパティ・エディタに name のプロパティが表示されます。
 **「Constraints」** の下にある **「Required」** をチェックします。
 
-![フィールド name のプロパティ・エディタで「Required」をチェック](images/005.png)
+![フィールド name のプロパティ・エディタで「Required」をチェック](images/property_editor_required.png)
 
 ##### 【ステップ 4】
 
@@ -88,7 +88,7 @@
 
 **「Endpoints」** タブ・ページを開くと、このビジネス・オブジェクトのデータの参照、作成、更新、削除のための REST API のエンドポイントが一覧できます。
 
-![ビジネス・オブジェクト Location の Endpoints タブ・ページ](images/006.png)
+![ビジネス・オブジェクト Location の Endpoints タブ・ページ](images/Endpoints.png)
 
 それぞれの行は左から、HTTPメソッド、エンドポイントのURL、エンドポイントを識別する名前、エンドポイントの説明が記述されています。
 
@@ -113,7 +113,7 @@ Location.csv には、4件の所在地データが含まれています。
 **「Data Manager」** タブ・ページが表示されます。
 **「Import from File」** ボックスをクリックします。
 
-![Data Manager タブ・ページで「Import from File」をクリック](images/007.png)
+![Data Manager タブ・ページで「Import from File」をクリック](images/file_importer.png)
 
 ##### 【ステップ 4】
 

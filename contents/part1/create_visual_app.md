@@ -15,7 +15,7 @@ Web ブラウザを使用して Oracle Visual Builder Cloud Service（以下 VBC
 
 VBCS の **「Visual Applications」** ページが表示されたら、**「New Application」** ボタンをクリックします。
 
-![VBCS の Visual Applications ページ](images/001.png)
+![VBCS の Visual Applications ページ](images/visual_builder_top.png)
 
 ##### 【ステップ 3】
 
@@ -31,7 +31,7 @@ VBCS の **「Visual Applications」** ページが表示されたら、**「New
 |**「Description」**|`Tutorial Application`|アプリケーションの簡単な説明
 |**「Application template」**| `Empty Application`(デフォルト) | アプリケーションのテンプレート
 
-![Create Application ダイアログ・ボックス](images/002.png)
+![Create Application ダイアログ・ボックス](images/application_dialog.png)
 
 値を設定したら、**「Create Application」** ダイアログ・ボックスの **「Finish」** ボタンをクリックします。
 
@@ -39,7 +39,7 @@ VBCS の **「Visual Applications」** ページが表示されたら、**「New
 アプリケーション・デザイナにはアーティファクト・ブラウザとWelcomeスクリーンが表示されます。
 Welcomeスクリーンには、VBCSでアプリケーションを作成するためのタスクのガイドが表示されます。
 
-![VBCS の アプリケーション・デザイナ](images/003.png)
+![VBCS の アプリケーション・デザイナ](images/application_designer.png)
 
 アプリケーション・デザイナの左側の領域はアーティファクト・ブラウザと呼ばれる領域で、アプリケーションを構成する各種ソース・ファイル（HTML/CSS/JavaScriptなど）や、データ・アクセスや画面フローの設定などアプリケーションを実行する際に必要となるメタデータ（JSONファイル）が表示され、アクセスできます。
 

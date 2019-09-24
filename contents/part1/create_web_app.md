@@ -19,7 +19,7 @@ VBCS のビジュアル・アプリケーションは、1つ以上のWebアプ�
 
 **「Create Web Application」** ダイアログ・ボックスが表示されたら、**「Application Name」** フィールドに `HRWebApp` と入力し、**Navigation Style**に`None`を選択し、 **「Create」** ボタンをクリックします。
 
-![「Create Web Application」ダイアログ・ボックス](images/004.png)
+![「Create Web Application」ダイアログ・ボックス](images/webapplication_dialog.png)
 
 ##### 【ステップ 3】
 

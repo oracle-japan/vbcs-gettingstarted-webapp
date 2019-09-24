@@ -27,7 +27,7 @@ Table コンポーネントのプロパティ・インスペクタで
 ここで選択されたフィールドは、データを作成するフォームで値を入力できます。
 ビジネス・オブジェクト Department の location フィールドは、ビジネス・オブジェクト Location のデータを参照するように設定したので、作成フォームではドロップダウン・リストから値を選択できるようになります。
 
-![「Add Create Page」ダイアログ・ボックスの「Page Details」ページ](images/017.png)
+![「Add Create Page」ダイアログ・ボックスの「Page Details」ページ](images/department_page_details.png)
 
 画面右側の **「Button label」** テキスト・フィールドの値を `作成` に変更します。
 クリックすると作成されるページにナビゲートするボタンのラベル・テキストが **「作成」** に設定されます。
@@ -42,9 +42,7 @@ Table コンポーネントのプロパティ・インスペクタで
 **「Add Create Page」** ダイアログ・ボックスで **「Finish」** ボタンをクリックすると、main-start ページの Heading コンポーネントと Table コンポーネントの間に Toolbar コンポーネントが追加されます。
 Toolbar コンポーネントの中には、**「作成」** ボタンが配置されています。
 
-![Quick Start メニューで Add Create Page 実行後の main-start ページ](images/018.png)
-
-また、アーティファクト・ブラウザの Web Applications　タブ・ページで **「HRWebApp」** → **「flows」** → **「main」** ノードを展開すると、 **「CreateDepartment」** ページが追加されています。
+![Quick Start メニューで Add Create Page 実行後の main-start ページ](images/main-start-add_create_page.png)
 
 ### 作成したページの動作確認
 
@@ -57,7 +55,7 @@ Toolbar コンポーネントの中には、**「作成」** ボタンが配置�
 画面右上にある **「Live」** ボタンをクリックすると、ボタンが緑色に変化します。
 これによりデザイナがライブ・モードになり、CreateDepartment ページの動作確認が可能な状態になります。
 
-![CreateDepartment ページ](images/create_department_live.png)
+![CreateDepartment ページ](images/create_department_live_set.png)
 
 **「Name」** フィールドに `管理部` と入力し、 **「Location」** フィールドで **「Floor 1」** を選択したら、 **「Save」** ボタンをクリックします。
 
@@ -81,14 +79,14 @@ main-start ページをアプリケーション・デザイナで開きます。
 main-start ページに追加された **「作成」** ボタンをクリックします。
 プロパティ・インスペクタの **「Events」** タブ・ページを開くと、 **「作成」** ボタンがクリックされる（ojActionイベントが発生する）と **「navigateToCreateDepartmentChain」** という名前のアクション・チェーンが起動されるように設定されていることがわかります。
 
-![main-start ページの「作成」ボタンのプロパティ・インスペクタで「Events」タブを選択](images/021.png)
+![main-start ページの「作成」ボタンのプロパティ・インスペクタで「Events」タブを選択](images/create_department_chains.png)
 
 ##### 【ステップ 3】
 
 プロパティ・インスペクタの **「Events」** タブ・ページで、 **「Action Chain」** の下に表示されている **「navigateToCreateDepartmentChain」** をクリックします。
 アクション・チェーンの設定がビジュアルに表示されます。
 
-![アクション・チェーンの設定](images/026.png)
+![アクション・チェーンの設定](images/create_department_chains2.png)
 
 ### Department レコードの作成処理の設定の確認
 
@@ -103,7 +101,7 @@ CreateDepartment ページには、2つの変数が定義されていること�
 `name` は、name フィールドに、 `location` は location フィールドにそれぞれバインドされています。
 * `locationListSDP` - Locationフィールドの選択肢を表示させるために使用されます。
 
-![CreateDepartment ページに定義されている変数](images/020.png)
+![CreateDepartment ページに定義されている変数](images/create_department_variable.png)
 
 ##### 【ステップ 2】
 
@@ -112,7 +110,7 @@ CreateDepartment ページで
 （Designer）タブをクリックします。
 **「Save」** ボタンを選択し、プロパティ・インスペクタの **「Event」** タブ・ページを開きます。
 
-![CreateDepartment ページの「Save」ボタンのプロパティ・インスペクタの「Events」タブ・ページ](images/022.png)
+![CreateDepartment ページの「Save」ボタンのプロパティ・インスペクタの「Events」タブ・ページ](images/create_department_events.png)
 
 clickイベントが発生したときはアクション・チェーン **「createDepartmentChain」** が実行されることが確認できます。
 
@@ -121,7 +119,7 @@ clickイベントが発生したときはアクション・チェーン **「cre
 プロパティ・インスペクタの **「Event」** タブ・ページでアクション・チェーン **「createDepartmentChain」** をクリックすると、アクション・チェーンの処理フローがビジュアルに表示されます。
 **「Call REST Endpoint businessObjects/create_Department」** で、ビジネス・オブジェクト Department の REST エンドポイント create_Department (POST /Departmen) をコールしています。
 
-![createDepartmentChain](images/023.png)
+![createDepartmentChain](images/create_department_events_chain.png)
 
 データの作成が成功した場合は処理が成功したことを通知するメッセージを表示し、ひとつ前の画面にナビゲートします。
 データの作成に失敗した場合は、エラーメッセージを表示します。
@@ -131,11 +129,11 @@ clickイベントが発生したときはアクション・チェーン **「cre
 アクション・チェーンのダイアログで、 **「Call businessObjects/create_Department」** をクリックすると、プロパティ・インスペクタで REST エンドポイント呼び出しの設定を確認できます。
 プロパティ・インスペクタを下にスクロールし、 **「Parameters」** の横にある **「Assign」** をクリックします。
 
-![Action Chainのプロパティ](images/024.png)
+![Action Chainのプロパティ](images/create_department_chain_mapping.png)
 
 **「Map Variables To Parameters」** ダイアログ・ボックスが表示されます。
 
-![「Map Variables To parameters」ダイアログ・ボックス](images/025.png)
+![「Map Variables To parameters」ダイアログ・ボックス](images/create_department_events_chain2.png)
 
 パラメータ **「body」** には CreateDepartment ページの変数 `department` がマップされていることを確認したら、 **「Cancel」** をクリックしてダイアログ・ボックスを閉じます。  
 

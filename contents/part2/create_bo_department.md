@@ -85,14 +85,14 @@
 |**「Reference Business Object」**|**「Location」** を選択|作成するフィールドがデータを参照するビジネス・オブジェクトを選択|
 |**「Default Display Field」**    |**「Name」** を選択|データを編集する際のリストの表示に使用される、参照先のビジネス・オブジェクト（今回は Location）のフィールドを選択|
 
-![ビジネス・オブジェクト Location にフィールド location を作成](images/008.png)
+![ビジネス・オブジェクト Location にフィールド location を作成](images/set_reference.png)
 
 ##### 【ステップ 3】
 
 ビジネス・オブジェクト Location の **「Endpoints」** タブ・ページを開きます。
 ビジネス・オブジェクト Location のデータを操作するためのエンドポイントが一覧できます。
 
-![ビジネス・オブジェクト Location の「Endpoints」タブ・ページ](images/009.png)
+![ビジネス・オブジェクト Location の「Endpoints」タブ・ページ](images/department_endpoint.png)
 
 ビジネス・オブジェクト Department は Location を参照しているので、 `/Department/{Department_Id}/child/locationObject` というエンドポイントで Department が参照している Location のデータにアクセスできます。  
 

@@ -127,7 +127,7 @@
 
 4つのフィールドを追加したら、ビジネス・オブジェクト Employee の **「Endpoints」** タブ・ページを開きます。
 
-![ビジネス・オブジェクト Employee の Endpoints タブ・ページ](images/010.png)
+![ビジネス・オブジェクト Employee の Endpoints タブ・ページ](images/employee_endpoint.png)
 
 EmployeeはDepartmentを参照し、DepartmentはLocation を参照しているので、それぞれのノードを展開するとこのパートで作成した3つのビジネス・オブジェクトすべてにアクセスできることがわかります。
 

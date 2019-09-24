@@ -74,22 +74,24 @@ Heading コンポーネントのプロパティ・インスペクタで、 **「
 
 **「Next」** ボタンをクリックします。
 
+![「Add Data」ダイアログ・ボックスの「Locate Data」ページでREST Endpointを選択](images/select_department_endpoint.png)
+
 ##### 【ステップ 4】
 
 **「Add Data」** ダイアログ・ボックスの **「Bind Data」** ページでは、テーブルの列を選択します。
 **「item[i]」** ノードの下の **「id」** と **「name」** を順番に選択します。
 
-![「Add Data」ダイアログ・ボックスの「Endpoint Structure」ページで「id」と「name」を選択](images/012.png)
+![「Add Data」ダイアログ・ボックスの「Endpoint Structure」ページで「id」と「name」を選択](images/select_department_endpoint_structure.png)
 
 **「Add Data」** ダイアログ・ボックスの右側にあるColumnsリストに、 **「items/id」**、 **「items/name」** の順に表示されていることを確認します。
-表示されている順番が異なる場合は、<img src="../icons/002.png" alt="ドラッガブルボタン">部分をドラッグ ＆ ドロップして順番を入れ替えます。
+表示されている順番が異なる場合は、<img src="../icons/draggable_icon.png" alt="ドラッガブルボタン">部分をドラッグ ＆ ドロップして順番を入れ替えます。
 
 ##### 【ステップ 5】
 
 次に、 **「locationObject」** とその下の **「items」** ノードを展開します。
 このとき、 **「item[i]」** ノードも同時に展開されるので、**「name」** をチェックします。
 
-![「Add Data」ダイアログ・ボックスの「Choose Columns」ページで「name」を選択](images/013.png)
+![「Add Data」ダイアログ・ボックスの「Choose Columns」ページで「name」を選択](images/select_department_choose_columns.png)
 
 **「Columns」** リストの一番下に、**「name」** が追加されていることを確認したら、**「Next」** ボタンをクリックします。
 
@@ -109,7 +111,7 @@ Heading コンポーネントのプロパティ・インスペクタで、 **「
 アプリケーション・デザイナの Variables エディタでは、ページに定義された変数が一覧できます。
 main-start ページには、 **「departmentListSDP」** という名前の変数が定義されています。
 
-![アプリケーション・ナビゲータのVariables エディタ](images/014.png)
+![アプリケーション・ナビゲータのVariables エディタ](images/department_application_navigator.png)
 
 この変数は、Quick Start メニューによって設定した REST エンドポイント（`GET /Department`）によって取得したデータを保持します。
 
@@ -121,7 +123,7 @@ main-start ページには、 **「departmentListSDP」** という名前の変�
 追加されたテーブルをクリックし、プロパティ・インスペクタの **「Data」** タブ・ページを開きます。
 **「Data」** フィールドには、テーブルに表示するデータの設定が記述されています。
 
-![Table コンポーネントのプロパティ･インスペクタの「データ」タブ・ページ](images/015.png)
+![Table コンポーネントのプロパティ･インスペクタの「データ」タブ・ページ](images/department_property_data.png)
 
 ##### 【ステップ 3】
 
@@ -130,6 +132,6 @@ main-start ページには、 **「departmentListSDP」** という名前の変�
 - **「Table Columns」** リストの上から二番目の **「Name」** をクリックして `部門名` に変更します。
 - **「Table Columns」** リストの一番下に表示されている **「Name」** をクリックして `所在地` に変更します。
 
-![列ヘッダーのテキストの変更](images/016.png)  
+![列ヘッダーのテキストの変更](images/department_property_data_named.png)  
 
 次に[Department のレコードを作成するページの追加](create_department.md)に進みます。

@@ -36,6 +36,6 @@
 （Settings）をクリックします。
 **「Default Page」** で、 **「departments」** が選択されていることを確認します。
 
-![main ページ・フローの「Settings」ページ](images/028.png)  
+![main ページ・フローの「Settings」ページ](images/main_page_flow_settings.png)  
 
 次に[パート4: ページ間のナビゲーションの設定](../part4/README.md)に進みます。
