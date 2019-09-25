@@ -89,10 +89,10 @@
 
 ##### 【ステップ 3】
 
-ビジネス・オブジェクト Location の **「Endpoints」** タブ・ページを開きます。
-ビジネス・オブジェクト Location のデータを操作するためのエンドポイントが一覧できます。
+ビジネス・オブジェクト Department の **「Endpoints」** タブ・ページを開きます。
+ビジネス・オブジェクト Department のデータを操作するためのエンドポイントが一覧できます。
 
-![ビジネス・オブジェクト Location の「Endpoints」タブ・ページ](images/department_endpoint.png)
+![ビジネス・オブジェクト Department の「Endpoints」タブ・ページ](images/department_endpoint.png)
 
 ビジネス・オブジェクト Department は Location を参照しているので、 `/Department/{Department_Id}/child/locationObject` というエンドポイントで Department が参照している Location のデータにアクセスできます。  
 
