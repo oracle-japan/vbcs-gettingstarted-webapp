@@ -107,7 +107,7 @@ Heading コンポーネントのプロパティ・インスペクタで、 **「
 
 アプリケーション・デザイナの
 <img src="../icons/vbcscp_variables_icon.png" alt="Variables アイコン">
-（Variables）アイコンをクリックします。
+（Variables & Types）アイコンをクリックします。
 アプリケーション・デザイナの Variables エディタでは、ページに定義された変数が一覧できます。
 main-start ページには、 **「departmentListSDP」** という名前の変数が定義されています。
 

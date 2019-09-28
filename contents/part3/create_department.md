@@ -35,7 +35,7 @@ Table コンポーネントのプロパティ・インスペクタで
 次に、**「Page Title」** テキスト・フィールドの値を `部門レコードの作成` に変更します。
 作成されるページのタイトルに使用されます。
 
-**「Page name」** はデフォルトの値（`CreateDepartment`）を使用することにして、**「Finish」** ボタンをクリックします。
+**「Page name」** には`CreateDepartment`を入力して、**「Finish」** ボタンをクリックします。
 
 ##### 【ステップ 4】
 
@@ -94,7 +94,7 @@ main-start ページに追加された **「作成」** ボタンをクリック
 
 アーティファクト・ブラウザで **「CreateDepartment」** ページをクリックし、
 <img src="../icons/vbcscp_variables_icon.png" alt="Variables アイコン">
-（Variables）タブをクリックします。
+（Variables & Types）タブをクリックします。
 CreateDepartment ページには、2つの変数が定義されていることがわかります。
 
 * `department` - ビジネス・オブジェクト Department のレコードを作成するためのデータを保持するための変数です。
@@ -126,7 +126,7 @@ clickイベントが発生したときはアクション・チェーン **「cre
 
 ##### 【ステップ 4】
 
-アクション・チェーンのダイアログで、 **「Call businessObjects/create_Department」** をクリックすると、プロパティ・インスペクタで REST エンドポイント呼び出しの設定を確認できます。
+アクション・チェーンのダイアログで、 **「Call REST Endpoint businessObjects/create_Department」** をクリックすると、プロパティ・インスペクタで REST エンドポイント呼び出しの設定を確認できます。
 プロパティ・インスペクタを下にスクロールし、 **「Parameters」** の横にある **「Assign」** をクリックします。
 
 ![Action Chainのプロパティ](images/create_department_chain_mapping.png)

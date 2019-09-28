@@ -48,7 +48,7 @@
 |設定項目      |設定する値|
 |------------|--------|
 |**「Label」**|`Name`  |
-|**「Id」**   |`name`  |
+|**「Field Name」**   |`name`  |
 |**「Type」** |**「String」** <img src="../icons/vbcsca_textfield_icon.png" alt="String アイコン"> を選択|
 
 ##### 【ステップ 3】
@@ -78,7 +78,7 @@
 |設定項目      |設定する値  |
 |------------|----------|
 |**「Label」**|`Department`|
-|**「Id」**   |`department`|
+|**「Field Name」**   |`department`|
 |**「Type」** |**「Reference」** <img src="../icons/vbcsca_referencefield_icon.png" alt="Reference アイコン">　を選択|
 |**「Reference Business Object」**|**「Department」** を選択|
 |**「Default Display Field」**    |**「Name」** を選択|
@@ -100,7 +100,7 @@
 |設定項目      |設定する値|
 |------------|--------|
 |**「Label」**|`Hire Date`|
-|**「Id」**   |`hireDate` |
+|**「Field Name」**   |`hireDate` |
 |**「Type」** |**「Date」** <img src="../icons/vbcsca_datefield_icon.png" alt="Date アイコン"> を選択|
 
 ### フィールド email の作成
@@ -120,7 +120,7 @@
 |設定項目      |設定する値|
 |------------|--------|
 |**「Label」**|`Email`|
-|**「Id」**   |`email` |
+|**「Field Name」**   |`email` |
 |**「Type」** |**「Email」** <img src="../icons/vbcsca_email_icon.png" alt="Email アイコン"> を選択|
 
 ##### 【ステップ 3】

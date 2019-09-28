@@ -17,8 +17,7 @@
 
 ##### 【ステップ 2】
 
-**「Add Create page」** ダイアログ・ボックスが表示されます。
-**「Select Endpoint」** ページでは、REST API のエンドポイントを選択します。
+REST API のエンドポイントを選択します。
 **「Business Objects」** → **「Employee」** を選択し、 **「Next」** ボタンをクリックします。
 
 ##### 【ステップ 3】
@@ -28,7 +27,7 @@
 
 画面右側の **「Button label」** テキスト・フィールドの値を `作成` に変更します。
 次に、**「Page Title」** テキスト・フィールドの値を `従業員レコードの作成` に変更します。
-**「Page name」** は`CreateEmploye`を入力して **「Finish」** ボタンをクリックします。
+**「Page name」** は`CreateEmployee`を入力して **「Finish」** ボタンをクリックします。
 
 ##### 【ステップ 4】
 

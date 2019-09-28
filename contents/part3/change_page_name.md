@@ -19,21 +19,22 @@
 
 ##### 【ステップ 2】
 
-**「Rename」** ダイアログ・ボックスが表示されたら、 **「Id」** を `main-start` から `Departments` に変更し、 **「Rename」** ボタンをクリックします。
+**「Rename」** ダイアログ・ボックスが表示されたら、 **「Id」** を `main-start` から `departments` に変更し、 **「Rename」** ボタンをクリックします。
 
 ![「Rename」ダイアログ・ボックス](images/rename.png)
 
 ##### 【ステップ 3】
 
-アーティファクト・ブラウザで、main-start ページが Departments に変更されていることを確認します。
+アーティファクト・ブラウザで、main-start ページが departments に変更されていることを確認します。
 
 ![main-start ページの名前を変更した後のアーティファクト・ブラウザ](images/artifact_browser_rename.png)
 
 ##### 【ステップ 4】
 
-アプリケーション・デザイナの
-<img src="../icons/vbcs_settings_icon.png" alt="Settings アイコン">
-（Settings）をクリックします。
+アーティファクト・ブラウザの **「Web Applications」**
+<img src="../icons/vbcsca_webapp_icon.png" alt="Web Applications アイコン">
+タブ・ページで **「HRWebApp」** → **「flows」** → **「main」** をクリックし、<img src="../icons/vbcs_settings_icon.png" alt="Settings アイコン">
+（Settings）をクリックします。  
 **「Default Page」** で、 **「departments」** が選択されていることを確認します。
 
 ![main ページ・フローの「Settings」ページ](images/main_page_flow_settings.png)  

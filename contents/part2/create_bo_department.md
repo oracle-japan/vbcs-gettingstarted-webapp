@@ -50,7 +50,7 @@
 |設定項目      |設定する値|
 |------------|--------|
 |**「Label」**|`Name`  |
-|**「Id」**   |`name`  |
+|**「Field Name」**   |`name`  |
 |**「Type」** |**「String」** <img src="../icons/vbcsca_textfield_icon.png" alt="String アイコン"> を選択|
 
 ##### 【ステップ 3】
@@ -80,7 +80,7 @@
 |設定項目      |設定する値  |説明|
 |------------|----------|---|
 |**「Label」**|`Location`|   |
-|**「Id」**   |`location`|   |
+|**「Field Name」**   |`location`|   |
 |**「Type」** |**「Reference」** <img src="../icons/vbcsca_referencefield_icon.png" alt="Reference アイコン">　を選択| |
 |**「Reference Business Object」**|**「Location」** を選択|作成するフィールドがデータを参照するビジネス・オブジェクトを選択|
 |**「Default Display Field」**    |**「Name」** を選択|データを編集する際のリストの表示に使用される、参照先のビジネス・オブジェクト（今回は Location）のフィールドを選択|
