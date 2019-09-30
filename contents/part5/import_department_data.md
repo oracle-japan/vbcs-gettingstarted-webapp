@@ -3,7 +3,7 @@
 
 ## データのインポート
 
-##### 【ステップ 1】{#part5-1-1}
+##### 【ステップ 1】
 
 [Department.csv](Department.csv) をダウンロードします。
 
@@ -28,14 +28,14 @@
 
 ![「Confirm Import Data」ダイアログ・ボックス](images/confirm_import_data.png)
 
-ダイアログ・ボックスの中央にある **「Upload a file or drag it here」** と書かれたボックスをクリックするとファイルを開くウィンドウが表示されるので、このパートの[ステップ1](#part5-1-1)でダウンロードした `Department.csv` を開き、 **「Import」** ボタンをクリックします。
+ダイアログ・ボックスの中央にある **「Upload a file or drag it here」** と書かれたボックスをクリックするとファイルを開くウィンドウが表示されるので、このパートのステップ1でダウンロードした `Department.csv` を開き、 **「Import」** ボタンをクリックします。
 
 
 ##### 【ステップ 5】
 
-**「Import from File」** ダイアログ・ボックスにインポートが成功したことを表すメッセージが表示されたら、 **「OK」** ボタンをクリックします。
+**「Import from File」** ダイアログ・ボックスにインポートが成功したことを表すメッセージが表示されたら、 **「Close」** ボタンをクリックします。
 
-![「Import from File」ダイアログ・ボックスで「OK」ボタンをクリック](images/import_from_file.png)
+![「Import from File」ダイアログ・ボックスで「Close」ボタンをクリック](images/import_from_file.png)
 
 ##### 【ステップ 6】
 

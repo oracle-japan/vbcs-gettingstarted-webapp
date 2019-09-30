@@ -16,7 +16,7 @@ Table コンポーネントのプロパティ・インスペクタで
 
 **「Add Edit Page」** ダイアログ・ボックスが表示されます。
 **「Select Endpoint」** ページでは、編集するレコードのデータを取得する際にコールする REST エンドポイントを指定します。
-**「Business Objects」** → **「Employee」** ノードの下にある **「GET /Employee/{Employee_Id}」** が選択されていることを確認したら **「Next」** ボタンをクリックします。
+**「Business Objects」** → **「Employee」** を選択します。 **「Next」** ボタンをクリックします。
 
 ##### 【ステップ 3】
 
@@ -30,7 +30,7 @@ Table コンポーネントのプロパティ・インスペクタで
 画面右側の **「Button label」** テキスト・フィールドの値を `編集` に変更します。
 次に、**「Page Title」** テキスト・フィールドの値を `従業員レコードの作成` に変更します。
 
-**「Page name」** に「`EditEmployee」を入力します。 **「Finish」** ボタンをクリックします。
+**「Page name」** に「`EditEmployee`」を入力します。 **「Finish」** ボタンをクリックします。
 
 ##### 【ステップ 5】
 

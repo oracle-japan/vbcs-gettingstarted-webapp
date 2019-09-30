@@ -21,7 +21,7 @@ Table コンポーネントのプロパティ・インスペクタで
 ##### 【ステップ 3】
 
 **「Add Edit Page」** ダイアログ・ボックスの **「Select Update Endpoint」** ページでは、レコードを更新する際にコールする REST エンドポイントを指定します。
-**「Business Objects」** → **「Employee」** をします。 **「Next」** ボタンをクリックします。
+**「Business Objects」** → **「Department」** をします。 **「Next」** ボタンをクリックします。
 
 ##### 【ステップ 4】
 

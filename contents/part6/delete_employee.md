@@ -23,6 +23,7 @@ Table コンポーネントのプロパティ・インスペクタで
 
 **「Add Delete Action」** ダイアログ・ボックスで **「Finish」** ボタンをクリックすると、Employees ページの Heading コンポーネントと Table コンポーネントの間の Toolbar コンポーネントの中には、**「Delete Employee」** ボタンが配置されています。
 追加された **「Delete Employee」** ボタンは、テーブルでレコードが選択されるまでは無効化されています。
+最後に **「Delete Employee」** ボタンに
 
 ![](images/delete_employee.png)
 
