@@ -21,18 +21,17 @@
 
 ##### 【ステップ 3】
 
-**「New Business Object」** ポップアップ・ボックスが表示されたら、 [表 2-1-1](#tab2-1-1) のように設定して、
+**「New Business Object」** ポップアップ・ボックスが表示されたら、 表 2-1-1のように設定して、
 <img src="../icons/vbcsca_create_icon.png" alt="Create アイコン">
 （Create）ボタンをクリックします。
 
-###### 表 2-1-1: ビジネス・オブジェクト Location の設定 {#tab2-1-1}
+###### 表 2-1-1: ビジネス・オブジェクト Location の設定
 
 |設定項目      |設定する値  |説明|
 |------------|----------|---|
 |**「Label」**|`Location`|作成するビジネス・オブジェクトの表示名|
-|**「Id」**   |`Location`|作成するビジネス・オブジェクトを識別するためのID。Labelと同じ値が自動的に設定されます。|
+|**「Name」**   |`Location`|作成するビジネス・オブジェクトを識別するためのID。Labelと同じ値が自動的に設定されます。|
 
-![「New Business Object」ポップアップ・ダイアログ](images/create_bo_location.png)
 
 ##### 【ステップ 4】
 
