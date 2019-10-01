@@ -16,25 +16,20 @@ Table コンポーネントのプロパティ・インスペクタで
 
 **「Add Detail Page」** ダイアログ・ボックスが表示されます。
 **「Select Read Endpoint」** ページでは、レコードのデータを取得する際にコールする REST エンドポイントを指定します。
-**「Business Objects」** → **「Employee」** ノードの下にある **「GET /Employee/{Employee_Id}」** が選択されていることを確認したら **「Next」** ボタンをクリックします。
-
-![「Add Edit Page」ダイアログ・ボックスの「Select Endpoint」ページ](images/add_detail_page_select_endpoint.png)
+**「Business Objects」** → **「Employee」** を選択します。
+**「Next」** ボタンをクリックします。
 
 ##### 【ステップ 3】
 
 **「Add Detail Page」** ダイアログ・ボックスの **「Page Details」** ページでは、ページに表示するビジネス・オブジェクトのフィールドを選択します。
 最初に、 **「Select fields」** で **「response」** ツリーの一番下に表示されている **「name」** と **「hireDate」**、**「email」** をチェックします。
 
-![](images/add_detail_page_page_details.png)
-
 次に、**「response」** ツリーの **「departmentObject」** → **「items」** → **「items[i]」** ノードの **「Name」** をチェックします。
-
-![](images/add_detail_page_page_details2.png)
 
 画面右側の **「Button label」** テキスト・フィールドの値を `詳細` に変更します。
 次に、**「Page Title」** テキスト・フィールドの値を `従業員詳細` に変更します。
 
-**「Page name」** はデフォルトの値（`EmployeeDetail`）を使用することにして、**「Finish」** ボタンをクリックします。
+**「Page name」** は「`EmployeeDetail`」を入力します。 **「Finish」** ボタンをクリックします。
 
 ##### 【ステップ 4】
 
@@ -43,4 +38,4 @@ Table コンポーネントのプロパティ・インスペクタで
 
 ![](images/employee_detail.png)
 
-また、アーティファクト・ブラウザの Web Applications　タブ・ページで **「HRWebApp」** → **「flows」** → **「main」** ノードを展開すると、 **「EmployeeDetail」** ページが追加されています。
+次に[レコードを削除するボタンの追加](delete_employee.md)に進みます。

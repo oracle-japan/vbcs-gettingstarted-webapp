@@ -15,14 +15,16 @@ Table コンポーネントのプロパティ・インスペクタで
 ##### 【ステップ 2】
 
 **「Add Delete Action」** ダイアログ・ボックスが表示されます。
-**「Select Read Endpoint」** ページでは、レコードを削除する際にコールする REST エンドポイントを指定します。
-**「Business Objects」** → **「Employee」** ノードの下にある **「DELETE /Employee/{Employee_Id}」** が選択されていることを確認したら **「Finish」** ボタンをクリックします。
-
-![「Add Edit Page」ダイアログ・ボックスの「Select Endpoint」ページ](images/add_delete_action.png)
+**「Select Endpoint」** ページでは、レコードを削除する際にコールする REST エンドポイントを指定します。
+**「Business Objects」** → **「Employee」** を選択します。
+**「Finish」** ボタンをクリックします。
 
 ##### 【ステップ 3】
 
 **「Add Delete Action」** ダイアログ・ボックスで **「Finish」** ボタンをクリックすると、Employees ページの Heading コンポーネントと Table コンポーネントの間の Toolbar コンポーネントの中には、**「Delete Employee」** ボタンが配置されています。
 追加された **「Delete Employee」** ボタンは、テーブルでレコードが選択されるまでは無効化されています。
+最後に **「Delete Employee」** ボタンに
 
 ![](images/delete_employee.png)
+
+以上で、Visual Builderのチュートリアルは終了です。コードレスなWebアプリケーションの作成をご体感頂けたでしょうか。

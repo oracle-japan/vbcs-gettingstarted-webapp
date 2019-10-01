@@ -3,7 +3,7 @@
 
 ## データのインポート
 
-##### 【ステップ 1】{#part6-1-1}
+##### 【ステップ 1】
 
 [Employee.csv](Employee.csv) をダウンロードします。
 
@@ -17,7 +17,7 @@
 
 **「Employee」** をクリックしてアプリケーション・デザイナで開きます。
 **「Data」** タブ・ページで
-<img src="vbcsnd_import_icon_transp.png" alt="Import from File アイコン">
+<img src="../icons/vbcsnd_import_icon_transp.png" alt="Import from File アイコン">
 （Import from File）アイコンをクリックします。
 
 ##### 【ステップ 4】
@@ -28,14 +28,16 @@
 
 ![「Confirm Import Data」ダイアログ・ボックス](images/confirm_import_data.png)
 
-ダイアログ・ボックスの中央にある **「Upload a file or drag it here」** と書かれたボックスをクリックするとファイルを開くウィンドウが表示されるので、このパートの[ステップ1](#part6-1-1)でダウンロードした `Employee.csv` を開き、 **「Import」** ボタンをクリックします。
+ダイアログ・ボックスの中央にある **「Upload a file or drag it here」** と書かれたボックスをクリックするとファイルを開くウィンドウが表示されるので、このパートのステップ1でダウンロードした `Employee.csv` を開き、 **「Import」** ボタンをクリックします。
 
 ##### 【ステップ 5】
 
-**「Import from File」** ダイアログ・ボックスにインポートが成功したことを表すメッセージが表示されたら、 **「OK」** ボタンをクリックします。
+**「Import from File」** ダイアログ・ボックスにインポートが成功したことを表すメッセージが表示されたら、 **「Close」** ボタンをクリックします。
 
 ##### 【ステップ 6】
 
 ビジネス・オブジェクト Employee の **「Data」** タブ・ページにインポートされたデータが表示されることを確認します。
 
 ![](images/employees_data.png)
+
+次に[レコードを編集するページの作成](edit_employee.md)に進みます。

@@ -32,9 +32,9 @@
 ##### 【ステップ 4】
 
 **「従業員一覧」** ボタンのプロパティ・インスペクタで、 **「Events」** タブ・ページを開きます。
-**「+ New Event」** ボタンをクリックすると表示されるメニューから **「Quick Start: 'click'」** を選択します。
+**「+ New Event」** ボタンをクリックすると表示されるメニューから **「Quick Start: 'ojAction'」** を選択します。
 
-![Button コンポーネントのプロパティ・インスペクタの「Events」タブ・ページで「Quick Start: 'click'」を選択](images/navigate_to_employees_properties_events.png)
+![Button コンポーネントのプロパティ・インスペクタの「Events」タブ・ページで「Quick Start: 'ojAction'」を選択](images/employee_events_ojAction.png)
 
 これにより、**「従業員一覧」** ボタンがクリックされた時に起動される、 Id が ButtonClickAction のアクション・チェーンが定義されます。
 
@@ -51,7 +51,7 @@
 
 画面の右側に **「Navigate」** パネルが表示されたら、 **「Select Target」** ボタンをクリックします。
 
-![「Navigate」パネルで「Select Target」ボタンをクリック](images/button_navigate_select_target.png)
+![「Navigate」パネルで「Select Target」ボタンをクリック](images/employee_navigate_setting.png)
 
 ##### 【ステップ 7】
 
@@ -74,3 +74,5 @@
 ![「Run」アイコンをクリック](images/run_departments_to_employees.png)
 
 Departments （部門一覧）ページの **「従業員一覧」** ボタンをクリックし、Employees （従業員一覧）ページにナビゲートされることを確認します。
+
+次に[Departments ページから Employees ページへのナビゲーション](employees_to_departments.md)に進みます。

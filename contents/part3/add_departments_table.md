@@ -68,37 +68,36 @@ Heading コンポーネントのプロパティ・インスペクタで、 **「
 ##### 【ステップ 3】
 
 **「Add Data」** ダイアログ・ボックスが表示されます。
-**「Choose an Endpoint」** ページでは、テーブルに表示するデータを取得する REST エンドポイントを選択します。
-**「Business Objects」** と **「Department」** ノードを展開し、 **「GET /Department」** を選択します。
-
-![「Add Data」ダイアログ・ボックスの「Choose an Endpoint」ページで「GET /Department」を選択](images/department_add_data_chose_endpoint.png)
+**「Locate Data」** ページでは、テーブルに表示するデータを取得する REST エンドポイントを選択します。
+**「Business Objects」** の **「Department」** を選択します。  
+この手順により、REST エンドポイント（`GET /Department`）にてデータを取得する設定ができます。
 
 **「Next」** ボタンをクリックします。
 
+![「Add Data」ダイアログ・ボックスの「Locate Data」ページでREST Endpointを選択](images/select_department_endpoint.png)
+
 ##### 【ステップ 4】
 
-**「Add Data」** ダイアログ・ボックスの **「Choose Columns」** ページでは、テーブルの列を選択します。
+**「Add Data」** ダイアログ・ボックスの **「Bind Data」** ページでは、テーブルの列を選択します。
 **「item[i]」** ノードの下の **「id」** と **「name」** を順番に選択します。
 
-![「Add Data」ダイアログ・ボックスの「Choose Columns」ページで「id」と「name」を選択](images/department_add_data_choose_columns.png)
+![「Add Data」ダイアログ・ボックスの「Endpoint Structure」ページで「id」と「name」を選択](images/select_department_endpoint_structure.png)
 
 **「Add Data」** ダイアログ・ボックスの右側にあるColumnsリストに、 **「items/id」**、 **「items/name」** の順に表示されていることを確認します。
-表示されている順番が異なる場合は、ハンバーガー・アイコン
-<img src="../icons/vbcs_hamburger.png" alt="ハンバーガー・アイコン">
-をドラッグ ＆ ドロップして順番を入れ替えます。
+表示されている順番が異なる場合は、<img src="../icons/draggable_icon.png" alt="ドラッガブルボタン">部分をドラッグ ＆ ドロップして順番を入れ替えます。
 
 ##### 【ステップ 5】
 
 次に、 **「locationObject」** とその下の **「items」** ノードを展開します。
 このとき、 **「item[i]」** ノードも同時に展開されるので、**「name」** をチェックします。
 
-![「Add Data」ダイアログ・ボックスの「Choose Columns」ページで「name」を選択](images/department_add_data_choose_columns2.png)
+![「Add Data」ダイアログ・ボックスの「Choose Columns」ページで「name」を選択](images/select_department_choose_columns.png)
 
-**「Columns」** リストの一番下に、**「items/locationObject/items/name」** が追加されていることを確認したら、**「Next」** ボタンをクリックします。
+**「Columns」** リストの一番下に、**「name」** が追加されていることを確認したら、**「Next」** ボタンをクリックします。
 
 ##### 【ステップ 6】
 
-**「Add Data」** ダイアログ・ボックスの **「Define Query Parameters」** ページでは、そのまま **「Finish」** ボタンをクリックします。
+**「Add Data」** ダイアログ・ボックスの **「Define Query」** ページでは、そのまま **「Finish」** ボタンをクリックします。
 
 ![テーブルが追加された状態](images/department_table.png)
 
@@ -108,11 +107,11 @@ Heading コンポーネントのプロパティ・インスペクタで、 **「
 
 アプリケーション・デザイナの
 <img src="../icons/vbcscp_variables_icon.png" alt="Variables アイコン">
-（Variables）アイコンをクリックします。
+（Variables & Types）アイコンをクリックします。
 アプリケーション・デザイナの Variables エディタでは、ページに定義された変数が一覧できます。
-main-start ページには、 **「departmentListServiceDataProvider」** という名前の変数が定義されています。
+main-start ページには、 **「departmentListSDP」** という名前の変数が定義されています。
 
-![アプリケーション・ナビゲータのVariables エディタ](images/main-start_variables.png)
+![アプリケーション・ナビゲータのVariables エディタ](images/department_application_navigator.png)
 
 この変数は、Quick Start メニューによって設定した REST エンドポイント（`GET /Department`）によって取得したデータを保持します。
 
@@ -124,7 +123,7 @@ main-start ページには、 **「departmentListServiceDataProvider」** とい
 追加されたテーブルをクリックし、プロパティ・インスペクタの **「Data」** タブ・ページを開きます。
 **「Data」** フィールドには、テーブルに表示するデータの設定が記述されています。
 
-![Table コンポーネントのプロパティ･インスペクタの「データ」タブ・ページ](images/main-start_table_data.png)
+![Table コンポーネントのプロパティ･インスペクタの「データ」タブ・ページ](images/department_property_data.png)
 
 ##### 【ステップ 3】
 
@@ -133,4 +132,6 @@ main-start ページには、 **「departmentListServiceDataProvider」** とい
 - **「Table Columns」** リストの上から二番目の **「Name」** をクリックして `部門名` に変更します。
 - **「Table Columns」** リストの一番下に表示されている **「Name」** をクリックして `所在地` に変更します。
 
-![列ヘッダーのテキストの変更](images/main-start_table_columns.png)
+![列ヘッダーのテキストの変更](images/department_property_data_named.png)  
+
+次に[Department のレコードを作成するページの追加](create_department.md)に進みます。

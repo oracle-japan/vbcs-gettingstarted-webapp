@@ -4,7 +4,7 @@
 ## ビジュアル・アプリケーションの作成
 
 Oracle Visual Builder Cloud Serviceでは最初に、ビジュアル・アプリケーションを作成します。
-ビジュアル・アプリケーションは、Webアプリケーションやモバイル・アプリケーションを会はつるために使用するリソースの集まりです。
+ビジュアル・アプリケーションは、Webアプリケーションやモバイル・アプリケーションを開発するために使用するリソースの集まりです。
 アプリケーションのソース・ファイルや、メタデータが記述されたJSONファイルを含んでいます。
 
 ##### 【ステップ 1】
@@ -13,9 +13,9 @@ Web ブラウザを使用して Oracle Visual Builder Cloud Service（以下 VBC
 
 ##### 【ステップ 2】
 
-VBCS の **「Visual Applications」** ページが表示されたら、**「New」** ボタンをクリックします。
+VBCS の **「Visual Applications」** ページが表示されたら、**「New Application」** ボタンをクリックします。
 
-![VBCS の Visual Applications ページ](images/visual_applications.png)
+![VBCS の Visual Applications ページ](images/visual_builder_top.png)
 
 ##### 【ステップ 3】
 
@@ -28,11 +28,12 @@ VBCS の **「Visual Applications」** ページが表示されたら、**「New
 |--------|--------|--------|
 |**「Application name」**|`HR Application`|アプリケーションにつける名前|
 |**「Id」**|`hr_application_<xx>`|アプリケーションのID。アプリケーションの URL にも用いられるので、VBCSのインスタンス内で一意である必要があります。 *&lt;xx&gt;* の部分はご自身のイニシャルなどと置き換えてください。|
-|**「Description」**|`Tutorial Application`|アプリケーションの簡単な説明|
+|**「Description」**|`Tutorial Application`|アプリケーションの簡単な説明
+|**「Application template」**| `Empty Application`(デフォルト) | アプリケーションのテンプレート
 
-![Create Application ダイアログ・ボックス](images/create_application.png)
+![Create Application ダイアログ・ボックス](images/application_dialog.png)
 
-値を設定したら、**「Create Application」** ダイアログ・ボックスの **「Create」** ボタンをクリックします。
+値を設定したら、**「Create Application」** ダイアログ・ボックスの **「Finish」** ボタンをクリックします。
 
 ビジュアル・アプリケーションが作成されると、VBCSのアプリケーション・デザイナでビジュアル・アプリケーションがオープンします。
 アプリケーション・デザイナにはアーティファクト・ブラウザとWelcomeスクリーンが表示されます。
@@ -44,14 +45,14 @@ Welcomeスクリーンには、VBCSでアプリケーションを作成するた
 
 アーティファクト・デザイナには、次のタブ・ページがあります。
 
-* Mobile Applications
-* Web Applications
 * Service Connections
 * Business Objects
+* Mobile Applications
+* Web Applications
+* Components
 * Processes
-* Source View
 
-画面上部のアプリケーションの名前（Application nameとして指定したテキスト）の右隣に表示される **「dev」** と **「1.0」** はそれぞれ、アプリケーションのステータス（development: 開発中を表す）とバージョンを表しています。
-アプリケーションの左隣に表示される
-<img src="../icons/vbcsca_va_icon.png" alt="Visual Applications アイコン">
-アイコン（Visual Applications）をクリックすると、Visual Applicationsページにナビゲートできます。
+
+画面上部のアプリケーションの名前（Application nameとして指定したテキスト）の右隣に表示される **「dev」** と **「1.0」** はそれぞれ、アプリケーションのステータス（development: 開発中を表す）とバージョンを表しています。  
+  
+次に[Webアプリケーションの作成](create_web_app.md)に進みます。

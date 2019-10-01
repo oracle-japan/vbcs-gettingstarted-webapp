@@ -21,22 +21,21 @@
 
 ##### 【ステップ 3】
 
-**「New Business Object」** ポップアップ・ボックスが表示されたら、 [表 2-1-1](#tab2-1-1) のように設定して、
+**「New Business Object」** ポップアップ・ボックスが表示されたら、 表 2-1-1のように設定して、
 <img src="../icons/vbcsca_create_icon.png" alt="Create アイコン">
 （Create）ボタンをクリックします。
 
-###### 表 2-1-1: ビジネス・オブジェクト Location の設定 {#tab2-1-1}
+###### 表 2-1-1: ビジネス・オブジェクト Location の設定
 
 |設定項目      |設定する値  |説明|
 |------------|----------|---|
 |**「Label」**|`Location`|作成するビジネス・オブジェクトの表示名|
-|**「Id」**   |`Location`|作成するビジネス・オブジェクトを識別するためのID。Labelと同じ値が自動的に設定されます。|
+|**「Name」**   |`Location`|作成するビジネス・オブジェクトを識別するためのID。Labelと同じ値が自動的に設定されます。|
 
-![「New Business Object」ポップアップ・ダイアログ](images/create_bo_location.png)
 
-#####【ステップ 4】
+##### 【ステップ 4】
 
-ビジネス・オブジェクトが作成されたら、 **「Fields」** タブをクリックます。
+ビジネス・オブジェクトが作成されたら、 **「Fields」** タブをクリックします。
 5つのフィールドが定義されています。
 
 * **Id**: レコードを一意に識別する ID
@@ -64,7 +63,7 @@
 |設定項目      |設定する値|説明|
 |------------|--------|---|
 |**「Label」**|`Name`  |追加するフィールドのラベル|
-|**「Id」**   |`Name`  |追加するフィールドを識別するためのID|
+|**「Field Name」**   |`name`  |追加するフィールドを識別するための名前。Labelを入力すると自動的に設定されます。|
 |**「Type」** |**「String」** <img src="../icons/vbcsca_textfield_icon.png" alt="String アイコン">|追加するフィールドのデータ型|
 
 ![ビジネス・オブジェクト Location に Name フィールドを追加](images/location_name.png)
@@ -74,9 +73,9 @@
 フィールド name が追加されると画面の右端のプロパティ・エディタに name のプロパティが表示されます。
 **「Constraints」** の下にある **「Required」** をチェックします。
 
-![フィールド name のプロパティ・エディタで「Required」をチェック](images/location_name_property.png)
+![フィールド name のプロパティ・エディタで「Required」をチェック](images/property_editor_required.png)
 
-#####【ステップ 4】
+##### 【ステップ 4】
 
 プロパティ・エディタで **「Required」** をチェックすると、フィールド name は必須データ項目に設定されます。
 レコードの作成や編集フォームで、値が入力されているかどうか自動的にチェックされるようになります。
@@ -88,7 +87,7 @@
 
 **「Endpoints」** タブ・ページを開くと、このビジネス・オブジェクトのデータの参照、作成、更新、削除のための REST API のエンドポイントが一覧できます。
 
-![ビジネス・オブジェクト Location の Endpoints タブ・ページ](images/location_endpoinsts.png)
+![ビジネス・オブジェクト Location の Endpoints タブ・ページ](images/Endpoints.png)
 
 それぞれの行は左から、HTTPメソッド、エンドポイントのURL、エンドポイントを識別する名前、エンドポイントの説明が記述されています。
 
@@ -96,7 +95,7 @@
 
 ##### 【ステップ 1】
 
-[Location.csv](Location.csv) をダウンロードします。
+[Location.csv](https://raw.githubusercontent.com/oracle-japan/vbcs-gettingstarted-webapp/master/contents/part2/Location.csv) をダウンロードします。
 Location.csv には、4件の所在地データが含まれています。
 
 ##### 【ステップ 2】
@@ -113,7 +112,7 @@ Location.csv には、4件の所在地データが含まれています。
 **「Data Manager」** タブ・ページが表示されます。
 **「Import from File」** ボックスをクリックします。
 
-![Data Manager タブ・ページで「Import from File」をクリック](images/data_manager_page.png)
+![Data Manager タブ・ページで「Import from File」をクリック](images/file_importer.png)
 
 ##### 【ステップ 4】
 
@@ -134,3 +133,5 @@ Location.csv には、4件の所在地データが含まれています。
 **「Data」** タブ・ページを開くと、追加されたレコードが表示されます。
 
 ![ビジネス・オブジェクト Location の Data タブ・ページ](images/location_data.png)
+
+次に[ビジネス・オブジェクト Departmentの作成](create_bo_department.md)に進みます。
