@@ -1,0 +1,5 @@
+[book]
+title = "Oracle Visual Builder - はじめての Web アプリケーション開発"
+language = "ja"
+multilingual = false
+src = "src"
