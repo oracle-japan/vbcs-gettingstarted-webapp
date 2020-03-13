@@ -1,5 +1,3 @@
-[Oracle VBCS はじめての Web アプリケーション開発](../../README.md)
-
 # パート2: ビジネス・オブジェクトの作成
 
 このパートでは、[パート1](../part1/README.md)で作成したビジュアル・アプリケーションにビジネス・オブジェクトを作成します。
@@ -17,7 +15,9 @@
 ![ビジネス・オブジェクトのダイアグラム](images/bo_diagram.png)
 
 ----
+
 1. [ビジネス・オブジェクト Location の作成](create_bo_location.md)
-2. [ビジネス・オブジェクト Department の作成](create_bo_department.md)
-3. [ビジネス・オブジェクト Employee の作成](create_bo_employee.md)
+1. [ビジネス・オブジェクト Department の作成](create_bo_department.md)
+1. [ビジネス・オブジェクト Employee の作成](create_bo_employee.md)
+
 ----
