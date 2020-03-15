@@ -1,7 +1,4 @@
-[Oracle VBCS はじめての Web アプリケーション開発](../../README.md) >
-[パート3: データを参照・作成するページの作成](README.md)
-
-## ページの名前の変更
+# ページの名前の変更
 
 このパートではここまでに、次の3つのページを新たに作成しました。
 
@@ -11,32 +8,25 @@
 
 これらのページにあわせて、main-start ページの名前を Departments に変更してみます。
 
-##### 【ステップ 1】
+1.  アーティファクト・ブラウザの **「Web Applications」**
+    ![Web Applications アイコン](../icons/vbcsca_webapp_icon.png)
+    タブ・ページで **「HRWebApp」** → **「flows」** → **「main」** ノードを展開し、 **「main-start」** ページを右クリックします。
 
-アーティファクト・ブラウザの **「Web Applications」**
-<img src="../icons/vbcsca_webapp_icon.png" alt="Web Applications アイコン">
-タブ・ページで **「HRWebApp」** → **「flows」** → **「main」** ノードを展開し、 **「main-start」** ページを右クリックします。
+1.  **「Rename」** ダイアログ・ボックスが表示されたら、 **「Id」** を `main-start` から `departments` に変更し、 **「Rename」** ボタンをクリックします。
 
-##### 【ステップ 2】
+    ![「Rename」ダイアログ・ボックス](images/rename.png)
 
-**「Rename」** ダイアログ・ボックスが表示されたら、 **「Id」** を `main-start` から `departments` に変更し、 **「Rename」** ボタンをクリックします。
+1.  アーティファクト・ブラウザで、main-start ページが departments に変更されていることを確認します。
 
-![「Rename」ダイアログ・ボックス](images/rename.png)
+    ![main-start ページの名前を変更した後のアーティファクト・ブラウザ](images/artifact_browser_rename.png)
 
-##### 【ステップ 3】
+1.  アーティファクト・ブラウザの **「Web Applications」**
+    ![Web Applications アイコン](../icons/vbcsca_webapp_icon.png)
+    タブ・ページで **「HRWebApp」** → **「flows」** → **「main」** をクリックし、
+    ![Settings アイコン](../icons/vbcs_settings_icon.png)
+    （Settings）をクリックします。  
+    **「Default Page」** で、 **「departments」** が選択されていることを確認します。
 
-アーティファクト・ブラウザで、main-start ページが departments に変更されていることを確認します。
-
-![main-start ページの名前を変更した後のアーティファクト・ブラウザ](images/artifact_browser_rename.png)
-
-##### 【ステップ 4】
-
-アーティファクト・ブラウザの **「Web Applications」**
-<img src="../icons/vbcsca_webapp_icon.png" alt="Web Applications アイコン">
-タブ・ページで **「HRWebApp」** → **「flows」** → **「main」** をクリックし、<img src="../icons/vbcs_settings_icon.png" alt="Settings アイコン">
-（Settings）をクリックします。  
-**「Default Page」** で、 **「departments」** が選択されていることを確認します。
-
-![main ページ・フローの「Settings」ページ](images/main_page_flow_settings.png)  
+    ![main ページ・フローの「Settings」ページ](images/main_page_flow_settings.png)  
 
 次に[パート4: ページ間のナビゲーションの設定](../part4/README.md)に進みます。
