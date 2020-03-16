@@ -67,4 +67,6 @@
 
     ビジネス・オブジェクト Department は Location を参照しているので、 `/Department/{Department_Id}/child/locationObject` というエンドポイントで Department が参照している Location のデータにアクセスできます。
 
+----
+
 次に[ビジネス・オブジェクト Employeeの作成](create_bo_employee.md)に進みます。

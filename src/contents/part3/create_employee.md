@@ -2,7 +2,7 @@
 
 ## ページの作成
 
-1.  [『Employee のレコードの一覧を表示するページの追加』](add_employees_table.md) で作成した Employees（従業員一覧）ページをアプリケーション・デザイナの
+1.  『[Employee のレコードの一覧を表示するページの追加](add_employees_table.md)』で作成した Employees（従業員一覧）ページをアプリケーション・デザイナの
     ![Designer アイコン](../icons/vbcscp_designer_icon.png)
     （Designer）タブ・ページで開きます。
 
@@ -53,5 +53,7 @@
     `oj-` で名前が始まるタグは、 [Oracle JavaScript Extension Toolkit (JET)](http://oraclejet.org) が提供するコンポーネントです。
 
     **「Design」** ボタンをクリックして、デザイナ・ビューに戻ります。  
+
+----
 
 次に[ページの名前の変更](change_page_name.md)に進みます。

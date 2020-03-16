@@ -106,4 +106,6 @@
 
     パラメータ **「body」** には CreateDepartment ページの変数 `department` がマップされていることを確認したら、 **「Cancel」** をクリックしてダイアログ・ボックスを閉じます。  
 
+----
+
 次に[Employee のレコードの一覧を表示するページの追加](add_employees_table.md)に進みます。

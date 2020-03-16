@@ -29,4 +29,6 @@
 
     ![main ページ・フローの「Settings」ページ](images/main_page_flow_settings.png)  
 
+----
+
 次に[パート4: ページ間のナビゲーションの設定](../part4/README.md)に進みます。

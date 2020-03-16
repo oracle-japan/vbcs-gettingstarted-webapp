@@ -62,4 +62,6 @@
 
     ![列ヘッダーのテキストを変更](images/employees_property_data.png)　　
 
+----
+
 次に[Employee のレコードを作成するページの追加](create_employee.md)に進みます。

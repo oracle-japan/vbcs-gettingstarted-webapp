@@ -24,4 +24,6 @@ VBCS のビジュアル・アプリケーションは、1つ以上のWebアプ�
 
     ![HRWebApp が生成されたアーティファクト・ブラウザ](images/artifact_browser_hrwebapp.png)
 
+----
+
 次に[パート2:ビジネス・オブジェクトの作成](../part2/README.md)に進みます。

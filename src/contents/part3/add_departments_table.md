@@ -108,4 +108,6 @@
 
     ![列ヘッダーのテキストの変更](images/department_property_data_named.png)
 
+----
+
 次に[Department のレコードを作成するページの追加](create_department.md)に進みます。

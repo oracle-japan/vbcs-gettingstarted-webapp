@@ -95,4 +95,6 @@
 
     ![ビジネス・オブジェクト Location の Data タブ・ページ](images/location_data.png)
 
+----
+
 次に[ビジネス・オブジェクト Departmentの作成](create_bo_department.md)に進みます。
