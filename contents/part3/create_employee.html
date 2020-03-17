@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Employee のレコードを作成するページの追加 - Oracle Visual Builder - はじめての Web アプリケーション開発</title>
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded affix "><a href="../../index.html">はじめに</a></li><li class="expanded "><a href="../../contents/part1/index.html"><strong aria-hidden="true">1.</strong> Web アプリケーションの作成</a></li><li><ol class="section"><li class="expanded "><a href="../../contents/part1/create_visual_app.html"><strong aria-hidden="true">1.1.</strong> ビジュアル・アプリケーションの作成</a></li><li class="expanded "><a href="../../contents/part1/create_web_app.html"><strong aria-hidden="true">1.2.</strong> Webアプリケーションの作成</a></li></ol></li><li class="expanded "><a href="../../contents/part2/index.html"><strong aria-hidden="true">2.</strong> ビジネス・オブジェクトの作成</a></li><li><ol class="section"><li class="expanded "><a href="../../contents/part2/create_bo_location.html"><strong aria-hidden="true">2.1.</strong> ビジネス・オブジェクト Location の作成</a></li><li class="expanded "><a href="../../contents/part2/create_bo_department.html"><strong aria-hidden="true">2.2.</strong> ビジネス・オブジェクト Department の作成</a></li><li class="expanded "><a href="../../contents/part2/create_bo_employee.html"><strong aria-hidden="true">2.3.</strong> ビジネス・オブジェクト Employee の作成</a></li></ol></li><li class="expanded "><a href="../../contents/part3/index.html"><strong aria-hidden="true">3.</strong> ビジネス・オブジェクトを参照・作成するページの作成</a></li><li><ol class="section"><li class="expanded "><a href="../../contents/part3/add_departments_table.html"><strong aria-hidden="true">3.1.</strong> Department のレコードの一覧を表示するテーブルの追加</a></li><li class="expanded "><a href="../../contents/part3/create_department.html"><strong aria-hidden="true">3.2.</strong> Department のレコードを作成するページの追加</a></li><li class="expanded "><a href="../../contents/part3/add_employees_table.html"><strong aria-hidden="true">3.3.</strong> Employee のレコードの一覧を表示するページの追加</a></li><li class="expanded "><a href="../../contents/part3/create_employee.html" class="active"><strong aria-hidden="true">3.4.</strong> Employee のレコードを作成するページの追加</a></li><li class="expanded "><a href="../../contents/part3/change_page_name.html"><strong aria-hidden="true">3.5.</strong> ページの名前の変更</a></li></ol></li><li class="expanded "><a href="../../contents/part4/index.html"><strong aria-hidden="true">4.</strong> ページ間のナビゲーションの設定</a></li><li><ol class="section"><li class="expanded "><a href="../../contents/part4/departments_to_employees.html"><strong aria-hidden="true">4.1.</strong> Departments ページから Employees ページへのナビゲーション</a></li><li class="expanded "><a href="../../contents/part4/employees_to_departments.html"><strong aria-hidden="true">4.2.</strong> Employees ページから Departments ページへのナビゲーション</a></li></ol></li><li class="expanded "><a href="../../contents/part5/index.html"><strong aria-hidden="true">5.</strong> Department のレコードの編集、詳細ページの作成</a></li><li><ol class="section"><li class="expanded "><a href="../../contents/part5/import_department_data.html"><strong aria-hidden="true">5.1.</strong> データのインポート</a></li><li class="expanded "><a href="../../contents/part5/edit_department.html"><strong aria-hidden="true">5.2.</strong> レコードを編集するページの作成</a></li><li class="expanded "><a href="../../contents/part5/detail_department.html"><strong aria-hidden="true">5.3.</strong> レコードの詳細を表示するページの作成</a></li></ol></li><li class="expanded "><a href="../../contents/part6/index.html"><strong aria-hidden="true">6.</strong> Employee のレコードの編集、詳細ページの作成</a></li><li><ol class="section"><li class="expanded "><a href="../../contents/part6/import_employee_data.html"><strong aria-hidden="true">6.1.</strong> データのインポート</a></li><li class="expanded "><a href="../../contents/part6/edit_employee.html"><strong aria-hidden="true">6.2.</strong> レコードを編集するページの作成</a></li><li class="expanded "><a href="../../contents/part6/detail_employee.html"><strong aria-hidden="true">6.3.</strong> レコードの詳細を表示するページの作成</a></li><li class="expanded "><a href="../../contents/part6/delete_employee.html"><strong aria-hidden="true">6.4.</strong> レコードを削除するボタンの追加</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Oracle Visual Builder - はじめての Web アプリケーション開発</h1>
+
+                        <div class="right-buttons">
+                            <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#employee-のレコードを作成するページの追加" id="employee-のレコードを作成するページの追加">Employee のレコードを作成するページの追加</a></h1>
+<h2><a class="header" href="#ページの作成" id="ページの作成">ページの作成</a></h2>
+<ol>
+<li>
+<p>『<a href="add_employees_table.html">Employee のレコードの一覧を表示するページの追加</a>』で作成した Employees（従業員一覧）ページをアプリケーション・デザイナの
+<img src="../icons/vbcscp_designer_icon.png" alt="Designer アイコン" />
+（Designer）タブ・ページで開きます。</p>
+<p>追加された Table コンポーネントのプロパティ・インスペクタで
+<img src="../icons/vbcscp_qs_icon.png" alt="Quick Start アイコン" />
+（Quick Start）タブを開き、 <strong>「Add Create page」</strong> をクリックします。</p>
+</li>
+<li>
+<p>REST API のエンドポイントを選択します。
+<strong>「Business Objects」</strong> → <strong>「Employee」</strong> を選択し、 <strong>「Next」</strong> ボタンをクリックします。</p>
+</li>
+<li>
+<p><strong>「Add Create page」</strong> ダイアログ・ボックスの <strong>「Page Details」</strong> ページでは、レコードを作成するフォームで値を指定する Employee ビジネス・オブジェクトのフィールドを選択します。
+<strong>「name」</strong>、<strong>「hireDate」</strong>、<strong>「email」</strong>、<strong>「department」</strong> をチェックします。</p>
+<p>画面右側の <strong>「Button label」</strong> テキスト・フィールドの値を <code>作成</code> に変更します。
+次に、<strong>「Page Title」</strong> テキスト・フィールドの値を <code>従業員レコードの作成</code> に変更します。
+<strong>「Page name」</strong> は<code>CreateEmployee</code>を入力して <strong>「Finish」</strong> ボタンをクリックします。</p>
+</li>
+<li>
+<p><strong>「Add Create Page」</strong> ダイアログ・ボックスで <strong>「Finish」</strong> ボタンをクリックすると、main-start ページの Heading コンポーネントと Table コンポーネントの間に Toolbar コンポーネントが追加されています。
+Toolbar コンポーネントの中には、<strong>「作成」</strong> ボタンが配置されています。</p>
+<p><img src="images/employees.png" alt="Quick Start メニューで Add Create Page 実行後の Employees ページ" /></p>
+</li>
+</ol>
+<h2><a class="header" href="#作成したページの動作確認" id="作成したページの動作確認">作成したページの動作確認</a></h2>
+<ol>
+<li>
+<p>アーティファクト・ブラウザで <strong>「CreateEmployee」</strong> ページをクリックし、アプリケーション・デザイナで開きます。</p>
+</li>
+<li>
+<p>画面右上にある <strong>「Live」</strong> ボタンをクリックして、ライブ・モードを有効します。
+適当なデータを入力して、<strong>「Save」</strong> ボタンをクリックします。</p>
+<p><img src="images/create_employee_live.png" alt="CreateEmployee ページ" /></p>
+</li>
+<li>
+<p>アーティファクト・ブラウザで <strong>「Employees」</strong> をクリックし、Employees（従業員一覧）ページをアプリケーション・デザイナの
+<img src="../icons/vbcscp_designer_icon.png" alt="Designer アイコン" />
+（Designer）タブ・ページで開きます。</p>
+<p>Employees ページをアプリケーション・デザイナで開きます。
+テーブルにこのセクションで追加したデータが表示されない場合は、
+<img src="../icons/vbcscp_reload_icon.png" alt="Reload Page アイコン" />
+（Reload Page）ボタンをクリックして、ページの再読み込みを実行します。</p>
+<p><img src="images/employees_table.png" alt="データが追加されたことの確認" /></p>
+</li>
+<li>
+<p>画面右上にある <strong>「Code」</strong> ボタンをクリックすると、Employees ページの HTML ソースを確認したり、直接編集したりすることができます。</p>
+<p><img src="images/employees_code.png" alt="Employees ページの Code を確認" /></p>
+<p><code>div</code> タグや <code>h1</code> タグなど通常の HTML タグのほかに、<code>oj-table</code> など、名前が <code>oj-</code> で始まるタグが使用されています。
+<code>oj-</code> で名前が始まるタグは、 <a href="http://oraclejet.org">Oracle JavaScript Extension Toolkit (JET)</a> が提供するコンポーネントです。</p>
+<p><strong>「Design」</strong> ボタンをクリックして、デザイナ・ビューに戻ります。</p>
+</li>
+</ol>
+<hr />
+<p>次に<a href="change_page_name.html">ページの名前の変更</a>に進みます。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="../../contents/part3/add_employees_table.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="../../contents/part3/change_page_name.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="../../contents/part3/add_employees_table.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="../../contents/part3/change_page_name.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://0.0.0.0:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+
+    </body>
+</html>
