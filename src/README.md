@@ -15,3 +15,4 @@ Oracle Visual Builder Cloud Serviceは、ユーザー・インタフェース（
 |*<イタリック>*|使用する環境などによって置き換える部分を表すプレースホルダー|
 |`固定幅フォント`|実行するコマンド、URL、サンプルコード、入力するテキスト|
 
+本ドキュメントの操作は、ページの左右にある![](contents/icons/progress.png)および![](contents/icons/back.png)を利用して実施してください。
