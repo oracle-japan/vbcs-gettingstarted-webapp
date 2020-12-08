@@ -15,6 +15,3 @@ Oracle Visual Builder Cloud Serviceは、ユーザー・インタフェース（
 |*<イタリック>*|使用する環境などによって置き換える部分を表すプレースホルダー|
 |`固定幅フォント`|実行するコマンド、URL、サンプルコード、入力するテキスト|
 
-チュートリアルは以下から始めてください。
-
-[Visual Builderチュートリアル](contents/part1/README.md)
